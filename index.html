@@ -97,87 +97,87 @@
             box-shadow: 4px 4px 0px rgba(123, 92, 214, 0.55);
         }
 
-    /* Cartridge / PNG Share Bar */
-    .cart-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      background: #221F2E;
-      border: 4px solid var(--nes-border);
-      box-shadow: 6px 6px 0px rgba(0,0,0,0.8);
-      padding: 12px 15px;
-      max-width: 1500px;
-      margin: 0 auto 20px auto;
-      box-sizing: border-box;
-    }
-    .cart-title-group {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex: 1;
-      min-width: 240px;
-    }
-    .cart-title-group label {
-      font-size: 9px;
-      color: var(--nes-cyan);
-      white-space: nowrap;
-    }
-    #songTitleInput {
-      flex: 1;
-      min-width: 140px;
-      background: #000;
-      color: #fff;
-      border: 2px solid var(--nes-border);
-      padding: 8px 10px;
-      font-family: inherit;
-      font-size: 10px;
-    }
-    #songTitleInput:focus {
-      border-color: var(--nes-cyan);
-      color: #fff;
-    }
-    .cart-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    #exportPngBtn {
-      border-color: var(--nes-green);
-      color: var(--nes-green);
-      background: #000;
-      padding: 8px 12px;
-      font-size: 9px;
-    }
-    #exportPngBtn:hover {
-      background: var(--nes-green);
-      color: #000;
-      border-color: #fff;
-    }
-    #importPngBtn {
-      border-color: var(--nes-cyan);
-      color: var(--nes-cyan);
-      background: #000;
-      padding: 8px 12px;
-      font-size: 9px;
-    }
-    #importPngBtn:hover {
-      background: var(--nes-cyan);
-      color: #000;
-      border-color: #fff;
-    }
-    .cart-status {
-      font-size: 8px;
-      color: var(--solo-yellow);
-      width: 100%;
-      display: none;
-      padding-top: 4px;
-    }
-    .cart-status.visible {
-      display: block;
-    }
+        /* Cartridge / PNG Share Bar */
+        .cart-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            background: #221F2E;
+            border: 4px solid var(--nes-border);
+            box-shadow: 6px 6px 0px rgba(0,0,0,0.8);
+            padding: 12px 15px;
+            max-width: 1500px;
+            margin: 0 auto 20px auto;
+            box-sizing: border-box;
+        }
+        .cart-title-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            min-width: 240px;
+        }
+        .cart-title-group label {
+            font-size: 9px;
+            color: var(--nes-cyan);
+            white-space: nowrap;
+        }
+        #songTitleInput {
+            flex: 1;
+            min-width: 140px;
+            background: #000;
+            color: #fff;
+            border: 2px solid var(--nes-border);
+            padding: 8px 10px;
+            font-family: inherit;
+            font-size: 10px;
+        }
+        #songTitleInput:focus {
+            border-color: var(--nes-cyan);
+            color: #fff;
+        }
+        .cart-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        #exportPngBtn {
+            border-color: var(--nes-green);
+            color: var(--nes-green);
+            background: #000;
+            padding: 8px 12px;
+            font-size: 9px;
+        }
+        #exportPngBtn:hover {
+            background: var(--nes-green);
+            color: #000;
+            border-color: #fff;
+        }
+        #importPngBtn {
+            border-color: var(--nes-cyan);
+            color: var(--nes-cyan);
+            background: #000;
+            padding: 8px 12px;
+            font-size: 9px;
+        }
+        #importPngBtn:hover {
+            background: var(--nes-cyan);
+            color: #000;
+            border-color: #fff;
+        }
+        .cart-status {
+            font-size: 8px;
+            color: var(--solo-yellow);
+            width: 100%;
+            display: none;
+            padding-top: 4px;
+        }
+        .cart-status.visible {
+            display: block;
+        }
 
         .layout { 
             display: grid; 
@@ -666,7 +666,6 @@
             margin-bottom: 15px;
         }
     </style>
-    <script src="https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js"></script>
 </head>
 <body>
 
@@ -824,7 +823,7 @@
         </h2>
         <div id="triPanelBody">
             <div class="control-row" style="margin-bottom:0;">
-                <div class="knob"><label>SPC700 ROM (16)</label><select id="tri_wave"><option value="spc_finger_bass" selected>01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (SEINFELD/FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings">05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CHRONO)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SECRET)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp">09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MEGA MAN X)</option><option value="spc_epiano">13 FM E.PIANO (DKC WATER)</option><option value="spc_organ">14 ROCK ORGAN (CASTLEVANIA)</option><option value="spc_orch_hit">15 ORCHESTRA HIT (16-BIT)</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
+                <div class="knob"><label>SPC700 ROM (16)</label><select id="tri_wave"><option value="spc_finger_bass" selected>01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings">05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CT)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SoM)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp">09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MMX)</option><option value="spc_epiano">13 FM E.PIANO (DKC)</option><option value="spc_organ">14 ROCK ORGAN (CV4)</option><option value="spc_orch_hit">15 ORCHESTRA HIT</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
                 <div class="knob"><label>OCTAVE</label><select id="tri_oct"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div>
                 <div class="knob"><label>RATE</label><select id="tri_speed"><option value="0.25">1/64</option><option value="0.5">1/32</option><option value="1" selected>1/16</option><option value="2">1/8</option><option value="4">1/4</option><option value="8">1/2</option><option value="16">1 BAR</option><option value="32">2 BARS</option></select></div>
                 <div class="knob"><label>DECAY</label><input type="range" id="tri_dec" min="0.05" max="0.5" step="0.01" value="0.2"></div>
@@ -844,7 +843,7 @@
         </h2>
         <div id="melPanelBody">
             <div class="control-row" style="margin-bottom:0;">
-                <div class="knob"><label>SPC700 ROM (16)</label><select id="mel_wave"><option value="spc_finger_bass">01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (SEINFELD/FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings" selected>05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CHRONO)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SECRET)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp">09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MEGA MAN X)</option><option value="spc_epiano">13 FM E.PIANO (DKC WATER)</option><option value="spc_organ">14 ROCK ORGAN (CASTLEVANIA)</option><option value="spc_orch_hit">15 ORCHESTRA HIT (16-BIT)</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
+                <div class="knob"><label>SPC700 ROM (16)</label><select id="mel_wave"><option value="spc_finger_bass">01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings" selected>05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CT)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SoM)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp">09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MMX)</option><option value="spc_epiano">13 FM E.PIANO (DKC)</option><option value="spc_organ">14 ROCK ORGAN (CV4)</option><option value="spc_orch_hit">15 ORCHESTRA HIT</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
                 <div class="knob"><label>OCTAVE</label><select id="mel_oct"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected>5</option><option value="6">6</option><option value="7">7</option></select></div>
                 <div class="knob"><label>RATE</label><select id="mel_speed"><option value="0.25">1/64</option><option value="0.5">1/32</option><option value="1" selected>1/16</option><option value="2">1/8</option><option value="4">1/4</option><option value="8">1/2</option><option value="16">1 BAR</option><option value="32">2 BARS</option></select></div>
                 <div class="knob"><label>DECAY</label><input type="range" id="mel_dec" min="0.05" max="0.5" step="0.01" value="0.1"></div>
@@ -869,7 +868,7 @@
             </div>
             <div id="sq1SettingsContainer">
                 <div class="control-row">
-                    <div class="knob"><label>SPC700 ROM (16)</label><select id="sq1_wave"><option value="spc_finger_bass">01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (SEINFELD/FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings">05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CHRONO)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SECRET)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp" selected>09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MEGA MAN X)</option><option value="spc_epiano">13 FM E.PIANO (DKC WATER)</option><option value="spc_organ">14 ROCK ORGAN (CASTLEVANIA)</option><option value="spc_orch_hit">15 ORCHESTRA HIT (16-BIT)</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
+                    <div class="knob"><label>SPC700 ROM (16)</label><select id="sq1_wave"><option value="spc_finger_bass">01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings">05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CT)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SoM)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp" selected>09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MMX)</option><option value="spc_epiano">13 FM E.PIANO (DKC)</option><option value="spc_organ">14 ROCK ORGAN (CV4)</option><option value="spc_orch_hit">15 ORCHESTRA HIT</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
                     <div class="knob"><label>OCTAVE</label><select id="sq1_oct"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected>5</option><option value="6">6</option><option value="7">7</option></select></div>
                     <div class="knob"><label>RATE</label><select id="sq1_speed"><option value="0.25">1/64</option><option value="0.5">1/32</option><option value="1" selected>1/16</option><option value="2">1/8</option><option value="4">1/4</option><option value="8">1/2</option><option value="16">1 BAR</option><option value="32">2 BARS</option></select></div>
                     <div class="knob"><label>DIRECTION</label><select id="sq1_dir"><option value="forward" selected>FORWARD</option><option value="reverse">REVERSE</option><option value="pingpong">PING-PONG</option><option value="random">RANDOM</option></select></div>
@@ -920,7 +919,7 @@
             </div>
             <div id="sq2SettingsContainer">
                 <div class="control-row">
-                    <div class="knob"><label>SPC700 ROM (16)</label><select id="sq2_wave"><option value="spc_finger_bass">01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (SEINFELD/FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings">05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CHRONO)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SECRET)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp">09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MEGA MAN X)</option><option value="spc_epiano" selected>13 FM E.PIANO (DKC WATER)</option><option value="spc_organ">14 ROCK ORGAN (CASTLEVANIA)</option><option value="spc_orch_hit">15 ORCHESTRA HIT (16-BIT)</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
+                    <div class="knob"><label>SPC700 ROM (16)</label><select id="sq2_wave"><option value="spc_finger_bass">01 FINGER BASS</option><option value="spc_slap_bass">02 SLAP BASS (FUNK)</option><option value="spc_synth_bass">03 MOOG SYNTH BASS</option><option value="spc_tuba">04 ORCHESTRAL TUBA</option><option value="spc_strings">05 MARCATO STRINGS</option><option value="spc_choir">06 CHOIR AAH (FF/CT)</option><option value="spc_flute">07 PAN FLUTE (ZELDA/SoM)</option><option value="spc_trumpet">08 HEROIC BRASS</option><option value="spc_harp">09 CELESTIAL HARP</option><option value="spc_piano">10 CONCERT PIANO</option><option value="spc_celesta">11 MUSIC BOX / CELESTA</option><option value="spc_overdrive">12 OVERDRIVE GTR (MMX)</option><option value="spc_epiano" selected>13 FM E.PIANO (DKC)</option><option value="spc_organ">14 ROCK ORGAN (CV4)</option><option value="spc_orch_hit">15 ORCHESTRA HIT</option><option value="spc_timpani">16 TIMPANI / TAIKO</option></select></div>
                     <div class="knob"><label>OCTAVE</label><select id="sq2_oct"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div>
                     <div class="knob"><label>RATE</label><select id="sq2_speed"><option value="0.25">1/64</option><option value="0.5">1/32</option><option value="1" selected>1/16</option><option value="2">1/8</option><option value="4">1/4</option><option value="8">1/2</option><option value="16">1 BAR</option><option value="32">2 BARS</option></select></div>
                     <div class="knob"><label>DIRECTION</label><select id="sq2_dir"><option value="forward" selected>FORWARD</option><option value="reverse">REVERSE</option><option value="pingpong">PING-PONG</option><option value="random">RANDOM</option></select></div>
@@ -1024,7 +1023,7 @@
             <!-- Delay Module (Tempo Synced) -->
             <div class="fx-card">
                 <div class="fx-card-header">
-                    <span>DELAY</span>
+                    <span>DELAY (SPC700 ECHO)</span>
                     <button class="fx-min-btn" data-fx="delay" style="font-size:7px; padding:1px 4px;">+</button>
                 </div>
                 <div id="fx_body_delay" style="display:none; flex-direction:column; gap:10px;">
@@ -1473,22 +1472,14 @@
         const newId = createPart(baseName);
         partOrder.push(newId);
         document.getElementById('new_part_name').value = "Verse";
-            ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
-    renderSongProgression();
+        renderSongProgression();
     };
 
     document.getElementById('clearSongBtn').onclick = () => {
         if (!confirm("Clear the song structure?")) return;
         partOrder = [];
         playheadPartIdx = 0; playheadStep = 0;
-            ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
-    renderSongProgression();
+        renderSongProgression();
     };
 
     function renderPartPool() {
@@ -1501,11 +1492,7 @@
             b.onclick = (e) => { 
                 if(e.target.classList.contains('remove-btn')) return;
                 partOrder.push(part.id); 
-                    ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
-    renderSongProgression(); 
+                renderSongProgression(); 
             };
             
             const rm = document.createElement('div');
@@ -1524,11 +1511,7 @@
                         globalStepCounter = 0;
                     }
                     renderPartPool();
-                        ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
-    renderSongProgression();
+                    renderSongProgression();
                     renderParts();
                 }
             };
@@ -1586,11 +1569,7 @@
                     } else if (draggedIdx > playheadPartIdx && idx <= playheadPartIdx) {
                         playheadPartIdx++;
                     }
-                        ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
-    renderSongProgression();
+                    renderSongProgression();
                 }
             };
 
@@ -1610,11 +1589,7 @@
                     globalStepCounter = 0;
                 }
                 
-                    ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
-    renderSongProgression();
+                renderSongProgression();
             };
             b.appendChild(rm);
 
@@ -2047,11 +2022,7 @@
                     srcPart.keyMode
                 );
                 partOrder.push(newId);
-                    ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
-    renderSongProgression();
+                renderSongProgression();
             }
         }
         else if(e.target.classList.contains('loop-btn')) {
@@ -2242,6 +2213,351 @@
         }
     }
 
+    // =========================================================================
+    // --- AUTHENTIC SNES SPC700 / S-DSP 32KHZ BRR + GAUSSIAN SAMPLE ENGINE ---
+    // =========================================================================
+    let spcGaussianFilter = null;
+    const spcSampleBank = {};
+    const SPC_BASE_RATE = 32000; // Authentic Sony S-DSP native 32kHz DAC rate
+
+    // Authentic 4-bit ADPCM / BRR (Bit Rate Reduction) block quantizer + 4-tap S-DSP Gaussian filter
+    function applySnesBrrAndGaussian(rawFloat32) {
+        const len = rawFloat32.length;
+        const brrQuantized = new Float32Array(len);
+
+        // Process in 16-sample BRR blocks (exact SNES ARAM block size)
+        for (let blockStart = 0; blockStart < len; blockStart += 16) {
+            let peak = 0.0001;
+            const blockEnd = Math.min(len, blockStart + 16);
+            for (let i = blockStart; i < blockEnd; i++) {
+                const a = Math.abs(rawFloat32[i]);
+                if (a > peak) peak = a;
+            }
+            // Quantize to 4-bit signed (-8..+7) per BRR block shift range
+            const step = peak / 7.0;
+            for (let i = blockStart; i < blockEnd; i++) {
+                const q = Math.max(-8, Math.min(7, Math.round(rawFloat32[i] / step)));
+                brrQuantized[i] = q * step;
+            }
+        }
+
+        // Apply S-DSP 4-point Gaussian interpolation kernel ([0.002, 0.258, 0.744, -0.004] normalized)
+        const out = new Float32Array(len);
+        for (let i = 0; i < len; i++) {
+            const s0 = brrQuantized[Math.max(0, i - 2)];
+            const s1 = brrQuantized[Math.max(0, i - 1)];
+            const s2 = brrQuantized[i];
+            const s3 = brrQuantized[Math.min(len - 1, i + 1)];
+            out[i] = (-0.004 * s0) + (0.258 * s1) + (0.744 * s2) + (0.002 * s3);
+        }
+        return out;
+    }
+
+    // Build compact, looped 32kHz SNES ARAM sample buffers for all 16 ROM instruments
+    function initSpc700Samples() {
+        if (!audioCtx || Object.keys(spcSampleBank).length > 0) return;
+
+        // Deterministic PRNG so samples sound identical every session
+        let seed = 0x5E7716;
+        const rand = () => {
+            seed = (seed * 1664525 + 1013904223) >>> 0;
+            return (seed / 0xFFFFFFFF) * 2 - 1;
+        };
+
+        // Helper: Create an exact integer-cycle looped AudioBuffer at 32kHz
+        function buildVoiceBuffer({
+            baseMidi = 60,
+            attackSamples = 256,
+            loopCycles = 4,
+            oneShot = false,
+            durationSec = 0.65,
+            synthFn
+        }) {
+            const baseFreq = mToF(baseMidi);
+            const samplesPerCycle = Math.round(SPC_BASE_RATE / baseFreq);
+            const exactFreq = SPC_BASE_RATE / samplesPerCycle;
+            const loopLen = samplesPerCycle * loopCycles;
+
+            // Align attack boundary to exact cycle multiple so loop seam is click-free
+            const attackCycles = Math.max(1, Math.round(attackSamples / samplesPerCycle));
+            const loopStartIdx = attackCycles * samplesPerCycle;
+            const totalLen = oneShot ? Math.round(SPC_BASE_RATE * durationSec) : (loopStartIdx + loopLen);
+
+            const raw = new Float32Array(totalLen);
+            for (let i = 0; i < totalLen; i++) {
+                const t = i / SPC_BASE_RATE;
+                const phase = (i % samplesPerCycle) / samplesPerCycle;
+                raw[i] = synthFn(t, phase, exactFreq, i, totalLen);
+            }
+
+            // Normalize & run through BRR 4-bit quantization + S-DSP Gaussian filter
+            let maxAmp = 0.001;
+            for (let i = 0; i < totalLen; i++) {
+                const a = Math.abs(raw[i]);
+                if (a > maxAmp) maxAmp = a;
+            }
+            for (let i = 0; i < totalLen; i++) raw[i] = (raw[i] / maxAmp) * 0.92;
+
+            const processed = applySnesBrrAndGaussian(raw);
+
+            // Crossfade loop seam (8 samples) for zero-click infinite sustain
+            if (!oneShot) {
+                for (let k = 0; k < 8; k++) {
+                    const fade = k / 8;
+                    const tailIdx = totalLen - 8 + k;
+                    const headIdx = loopStartIdx + k;
+                    processed[tailIdx] = processed[tailIdx] * (1 - fade) + processed[headIdx] * fade;
+                }
+            }
+
+            const audioBuf = audioCtx.createBuffer(1, totalLen, SPC_BASE_RATE);
+            audioBuf.getChannelData(0).set(processed);
+
+            return {
+                buffer: audioBuf,
+                baseFreq: exactFreq,
+                loop: !oneShot,
+                loopStart: loopStartIdx / SPC_BASE_RATE,
+                loopEnd: totalLen / SPC_BASE_RATE
+            };
+        }
+
+        // 01 FINGER BASS (C2 = MIDI 36) - Classic 16-bit SNES electric bass with muted finger pluck
+        spcSampleBank.spc_finger_bass = buildVoiceBuffer({
+            baseMidi: 36, attackSamples: 1400, loopCycles: 2,
+            synthFn: (t, p, f) => {
+                const pluck = Math.exp(-t * 32);
+                const sub = Math.sin(2 * Math.PI * f * t);
+                const h2 = 0.58 * Math.sin(2 * Math.PI * f * 2 * t + 0.3);
+                const h3 = (0.24 + 0.38 * pluck) * Math.sin(2 * Math.PI * f * 3 * t);
+                const h4 = (0.08 + 0.32 * pluck) * Math.sin(2 * Math.PI * f * 4 * t);
+                const thump = 0.35 * pluck * Math.sin(2 * Math.PI * (f * 2.5) * t);
+                return (sub + h2 + h3 + h4 + thump) * Math.min(1, t * 260);
+            }
+        });
+
+        // 02 SLAP BASS (C2 = MIDI 36) - Funky 16-bit thumb slap & harmonic pop
+        spcSampleBank.spc_slap_bass = buildVoiceBuffer({
+            baseMidi: 36, attackSamples: 1800, loopCycles: 2,
+            synthFn: (t, p, f) => {
+                const slapEnv = Math.exp(-t * 24);
+                const popSnap = Math.exp(-t * 95);
+                const fundamental = Math.sin(2 * Math.PI * f * t + 0.5 * popSnap * Math.sin(2 * Math.PI * f * 3 * t));
+                const harmonics = (0.65 * Math.sin(2 * Math.PI * f * 2 * t))
+                                + (0.55 * slapEnv * Math.sin(2 * Math.PI * f * 4 * t))
+                                + (0.48 * slapEnv * Math.sin(2 * Math.PI * f * 6 * t))
+                                + (0.35 * popSnap * Math.sin(2 * Math.PI * f * 9 * t));
+                return (fundamental + harmonics) * Math.min(1, t * 400);
+            }
+        });
+
+        // 03 MOOG SYNTH BASS (C2 = MIDI 36) - Resonant 16-bit analog saw/square bass
+        spcSampleBank.spc_synth_bass = buildVoiceBuffer({
+            baseMidi: 36, attackSamples: 1600, loopCycles: 2,
+            synthFn: (t, p, f) => {
+                const filtEnv = Math.exp(-t * 14);
+                let sum = 0;
+                for (let h = 1; h <= 10; h++) {
+                    const cutoff = Math.exp(-h * (0.38 - 0.25 * filtEnv));
+                    sum += (1 / h) * cutoff * Math.sin(2 * Math.PI * f * h * t);
+                }
+                const subSquare = 0.45 * Math.tanh(2.2 * Math.sin(2 * Math.PI * f * t));
+                return (sum + subSquare) * Math.min(1, t * 320);
+            }
+        });
+
+        // 04 ORCHESTRAL TUBA (C2 = MIDI 36) - Warm SNES low-brass puff
+        spcSampleBank.spc_tuba = buildVoiceBuffer({
+            baseMidi: 36, attackSamples: 1400, loopCycles: 2,
+            synthFn: (t, p, f) => {
+                const swell = Math.min(1, t * 45);
+                const brass = Math.sin(2 * Math.PI * f * t)
+                            + 0.72 * Math.sin(2 * Math.PI * f * 2 * t)
+                            + 0.44 * Math.sin(2 * Math.PI * f * 3 * t)
+                            + 0.20 * Math.sin(2 * Math.PI * f * 4 * t);
+                return brass * swell;
+            }
+        });
+
+        // 05 MARCATO STRINGS (C4 = MIDI 60) - Classic SNES ARAM string ensemble loop
+        spcSampleBank.spc_strings = buildVoiceBuffer({
+            baseMidi: 60, attackSamples: 1400, loopCycles: 8,
+            synthFn: (t, p, f) => {
+                const bowEnv = Math.min(1, t * 28);
+                // Rich ensemble waveform locked to integer cycles for seamless loop
+                const w1 = (2 * ((f * t) % 1) - 1);
+                const w2 = (2 * (((f * t) + 0.33) % 1) - 1);
+                const w3 = Math.sin(2 * Math.PI * f * t);
+                const h2 = 0.45 * Math.sin(2 * Math.PI * f * 2 * t + 0.4);
+                const h3 = 0.28 * Math.sin(2 * Math.PI * f * 3 * t + 1.1);
+                return (0.38 * w1 + 0.32 * w2 + 0.55 * w3 + h2 + h3) * bowEnv;
+            }
+        });
+
+        // 06 CHOIR AAH (C4 = MIDI 60) - Formant-tuned Chrono Trigger / FF6 vocal sample
+        spcSampleBank.spc_choir = buildVoiceBuffer({
+            baseMidi: 60, attackSamples: 1600, loopCycles: 6,
+            synthFn: (t, p, f) => {
+                const env = Math.min(1, t * 22);
+                // Vocal "Aah" formants around 750Hz, 1200Hz, and 2600Hz
+                let vox = 0;
+                for (let h = 1; h <= 14; h++) {
+                    const hf = f * h;
+                    const f1 = Math.exp(-Math.pow((hf - 740) / 180, 2));
+                    const f2 = 0.75 * Math.exp(-Math.pow((hf - 1220) / 240, 2));
+                    const f3 = 0.35 * Math.exp(-Math.pow((hf - 2550) / 360, 2));
+                    const amp = (1 / Math.sqrt(h)) * (0.35 + f1 + f2 + f3);
+                    vox += amp * Math.sin(2 * Math.PI * hf * t);
+                }
+                return vox * env;
+            }
+        });
+
+        // 07 PAN FLUTE (C5 = MIDI 72) - Breathy Secret of Mana / Zelda wind voice
+        spcSampleBank.spc_flute = buildVoiceBuffer({
+            baseMidi: 72, attackSamples: 1100, loopCycles: 8,
+            synthFn: (t, p, f) => {
+                const env = Math.min(1, t * 38);
+                const breathBurst = Math.exp(-t * 28) * 0.42 + 0.06;
+                const breathNoise = rand() * breathBurst;
+                const pipe = Math.sin(2 * Math.PI * f * t)
+                           + 0.32 * Math.sin(2 * Math.PI * f * 2 * t)
+                           + 0.14 * Math.sin(2 * Math.PI * f * 3 * t);
+                return (pipe + breathNoise) * env;
+            }
+        });
+
+        // 08 HEROIC BRASS (C4 = MIDI 60) - Sforzando 16-bit FF6 / Mega Man X fanfare brass
+        spcSampleBank.spc_trumpet = buildVoiceBuffer({
+            baseMidi: 60, attackSamples: 1200, loopCycles: 6,
+            synthFn: (t, p, f) => {
+                const bite = Math.min(1, t * 55);
+                const flare = 0.65 + 0.35 * Math.exp(-t * 12);
+                const horn = 0.75 * Math.sin(2 * Math.PI * f * t)
+                           + 0.92 * flare * Math.sin(2 * Math.PI * f * 2 * t)
+                           + 0.74 * flare * Math.sin(2 * Math.PI * f * 3 * t)
+                           + 0.52 * flare * Math.sin(2 * Math.PI * f * 4 * t)
+                           + 0.30 * flare * Math.sin(2 * Math.PI * f * 5 * t);
+                return horn * bite;
+            }
+        });
+
+        // 09 CELESTIAL HARP (C4 = MIDI 60) - Shimmering SNES harp pluck
+        spcSampleBank.spc_harp = buildVoiceBuffer({
+            baseMidi: 60, oneShot: true, durationSec: 0.95,
+            synthFn: (t, p, f) => {
+                const env = Math.exp(-t * 4.2) * Math.min(1, t * 320);
+                const bright = Math.exp(-t * 14);
+                return env * (
+                    Math.sin(2 * Math.PI * f * t)
+                    + (0.55 * bright + 0.15) * Math.sin(2 * Math.PI * f * 2 * t)
+                    + (0.38 * bright) * Math.sin(2 * Math.PI * f * 3 * t)
+                    + (0.24 * bright) * Math.sin(2 * Math.PI * f * 4 * t)
+                    + (0.14 * bright) * Math.sin(2 * Math.PI * f * 5 * t)
+                );
+            }
+        });
+
+        // 10 CONCERT PIANO (C4 = MIDI 60) - 16-bit sampled acoustic grand
+        spcSampleBank.spc_piano = buildVoiceBuffer({
+            baseMidi: 60, oneShot: true, durationSec: 0.9,
+            synthFn: (t, p, f) => {
+                const env = Math.exp(-t * 4.8) * Math.min(1, t * 380);
+                const hammer = Math.exp(-t * 45) * 0.45 * Math.sin(2 * Math.PI * f * 7 * t);
+                const body = Math.sin(2 * Math.PI * f * t)
+                           + 0.62 * Math.exp(-t * 6) * Math.sin(2 * Math.PI * f * 2 * t)
+                           + 0.36 * Math.exp(-t * 9) * Math.sin(2 * Math.PI * f * 3 * t)
+                           + 0.22 * Math.exp(-t * 14) * Math.sin(2 * Math.PI * f * 4 * t)
+                           + 0.12 * Math.exp(-t * 20) * Math.sin(2 * Math.PI * f * 5 * t);
+                return (body + hammer) * env;
+            }
+        });
+
+        // 11 MUSIC BOX / CELESTA (C5 = MIDI 72) - Bell-like Chrono Trigger / Yoshi's Island chime
+        spcSampleBank.spc_celesta = buildVoiceBuffer({
+            baseMidi: 72, oneShot: true, durationSec: 0.85,
+            synthFn: (t, p, f) => {
+                const env = Math.exp(-t * 5.2) * Math.min(1, t * 500);
+                const tine = Math.exp(-t * 28) * 0.55 * Math.sin(2 * Math.PI * f * 4.0 * t);
+                const bell = Math.sin(2 * Math.PI * f * t)
+                           + 0.28 * Math.exp(-t * 10) * Math.sin(2 * Math.PI * f * 2 * t)
+                           + 0.16 * Math.exp(-t * 16) * Math.sin(2 * Math.PI * f * 3 * t);
+                return (bell + tine) * env;
+            }
+        });
+
+        // 12 OVERDRIVE GUITAR (C4 = MIDI 60) - Waveshaped Mega Man X lead guitar
+        spcSampleBank.spc_overdrive = buildVoiceBuffer({
+            baseMidi: 60, attackSamples: 900, loopCycles: 6,
+            synthFn: (t, p, f) => {
+                const pick = Math.min(1, t * 180);
+                const rawSig = Math.sin(2 * Math.PI * f * t)
+                             + 0.65 * Math.sin(2 * Math.PI * f * 2 * t)
+                             + 0.45 * Math.sin(2 * Math.PI * f * 3 * t)
+                             + 0.25 * Math.sin(2 * Math.PI * f * 5 * t);
+                // Asymmetric 16-bit tube/stompbox clipping
+                const clipped = Math.tanh(rawSig * 3.4);
+                return clipped * pick;
+            }
+        });
+
+        // 13 FM E.PIANO (C4 = MIDI 60) - 2-op FM bell tine inspired by DKC aquatic tracks
+        spcSampleBank.spc_epiano = buildVoiceBuffer({
+            baseMidi: 60, attackSamples: 1400, loopCycles: 6,
+            synthFn: (t, p, f) => {
+                const tineEnv = Math.exp(-t * 16);
+                const mod = (1.6 * tineEnv + 0.18) * Math.sin(2 * Math.PI * f * 7 * t);
+                const carrier = Math.sin(2 * Math.PI * f * t + mod)
+                              + 0.35 * Math.sin(2 * Math.PI * f * 2 * t);
+                return carrier * Math.min(1, t * 280);
+            }
+        });
+
+        // 14 ROCK ORGAN (C4 = MIDI 60) - Castlevania IV drawbar harmonic organ
+        spcSampleBank.spc_organ = buildVoiceBuffer({
+            baseMidi: 60, attackSamples: 600, loopCycles: 4,
+            synthFn: (t, p, f) => {
+                const click = Math.exp(-t * 120) * 0.45 * rand();
+                const drawbars = 0.85 * Math.sin(2 * Math.PI * f * t)
+                               + 0.80 * Math.sin(2 * Math.PI * f * 2 * t)
+                               + 0.65 * Math.sin(2 * Math.PI * f * 3 * t)
+                               + 0.50 * Math.sin(2 * Math.PI * f * 4 * t)
+                               + 0.35 * Math.sin(2 * Math.PI * f * 6 * t)
+                               + 0.25 * Math.sin(2 * Math.PI * f * 8 * t);
+                return (drawbars + click) * Math.min(1, t * 240);
+            }
+        });
+
+        // 15 ORCHESTRA HIT (C4 = MIDI 60) - Iconic 16-bit Street Fighter II / EarthBound tutti stab
+        spcSampleBank.spc_orch_hit = buildVoiceBuffer({
+            baseMidi: 60, oneShot: true, durationSec: 0.55,
+            synthFn: (t, p, f) => {
+                const env = Math.exp(-t * 7.5) * Math.min(1, t * 450);
+                // Stacked fifth + octave brass/string/timpani chord hit
+                const root = Math.sin(2 * Math.PI * f * t) + 0.7 * Math.sin(2 * Math.PI * f * 2 * t) + 0.5 * Math.sin(2 * Math.PI * f * 3 * t);
+                const fifth = 0.65 * Math.sin(2 * Math.PI * (f * 1.498) * t) + 0.45 * Math.sin(2 * Math.PI * (f * 2.996) * t);
+                const octUp = 0.55 * Math.sin(2 * Math.PI * (f * 2.0) * t) + 0.35 * Math.sin(2 * Math.PI * (f * 4.0) * t);
+                const punch = 0.4 * Math.exp(-t * 25) * rand();
+                return Math.tanh((root + fifth + octUp + punch) * 1.4) * env;
+            }
+        });
+
+        // 16 TIMPANI / TAIKO (C3 = MIDI 48) - Pitch-dropping orchestral kettle drum
+        spcSampleBank.spc_timpani = buildVoiceBuffer({
+            baseMidi: 48, oneShot: true, durationSec: 0.75,
+            synthFn: (t, p, f) => {
+                const env = Math.exp(-t * 5.5) * Math.min(1, t * 320);
+                const pitchDrop = 1.0 + 0.28 * Math.exp(-t * 22);
+                const instF = f * pitchDrop;
+                const skin = Math.sin(2 * Math.PI * instF * t)
+                           + 0.58 * Math.sin(2 * Math.PI * (instF * 1.5) * t)
+                           + 0.34 * Math.sin(2 * Math.PI * (instF * 1.98) * t)
+                           + 0.22 * Math.exp(-t * 35) * rand();
+                return skin * env;
+            }
+        });
+    }
+
     // --- Audio Init & FX DSP Chain ---
     function updateMixerGain(track) {
         if(!buses[track]) return;
@@ -2296,7 +2612,7 @@
 
         // --- Build Advanced FX DSP Nodes with Wet/Dry Mix Busses ---
         
-        // 1. DELAY BUS
+        // 1. DELAY BUS (SPC700 Echo)
         fxNodes.delayInput = audioCtx.createGain();
         fxNodes.delayNode = audioCtx.createDelay(4.0);
         fxNodes.delayFeedback = audioCtx.createGain();
@@ -2369,7 +2685,7 @@
         document.getElementById('fx_dist_tone').oninput = e => fxNodes.distFilter.frequency.value = parseFloat(e.target.value);
         document.getElementById('fx_dist_mix').oninput = e => fxNodes.distWet.gain.value = parseFloat(e.target.value);
 
-        // SNES S-DSP 32kHz Gaussian Interpolation Warmth Filter (~11.5kHz roll-off)
+        // SNES S-DSP 32kHz Gaussian DAC Warmth Lowpass (~11.5kHz roll-off)
         spcGaussianFilter = audioCtx.createBiquadFilter();
         spcGaussianFilter.type = 'lowpass';
         spcGaussianFilter.frequency.value = 11500;
@@ -2380,7 +2696,7 @@
         spcGaussianFilter.connect(analyser);
         analyser.connect(audioCtx.destination);
 
-        // Initialize Lightweight WebAudioFont Sample Engine
+        // Generate all 16 32kHz BRR + Gaussian SNES ROM voices instantly in memory
         initSpc700Samples();
 
         Object.keys(buses).forEach(t => updateMixerGain(t));
@@ -2388,58 +2704,12 @@
         drawScope();
     }
 
-    let spcGaussianFilter = null;
-    let wafPlayer = null;
-    const spcPresets = {};
-    const spcSampleCatalog = {
-        // 16 Iconic SNES SPC700 ROM Voices (64KB ARAM Spirit)
-        spc_finger_bass: { url: 'https://surikov.github.io/webaudiofontdata/sound/0330_FluidR3_GM_sf2_file.js', varName: '_tone_0330_FluidR3_GM_sf2_file' },
-        spc_slap_bass:   { url: 'https://surikov.github.io/webaudiofontdata/sound/0360_FluidR3_GM_sf2_file.js', varName: '_tone_0360_FluidR3_GM_sf2_file' },
-        spc_synth_bass:  { url: 'https://surikov.github.io/webaudiofontdata/sound/0380_FluidR3_GM_sf2_file.js', varName: '_tone_0380_FluidR3_GM_sf2_file' },
-        spc_tuba:        { url: 'https://surikov.github.io/webaudiofontdata/sound/0580_FluidR3_GM_sf2_file.js', varName: '_tone_0580_FluidR3_GM_sf2_file' },
-        spc_strings:     { url: 'https://surikov.github.io/webaudiofontdata/sound/0480_FluidR3_GM_sf2_file.js', varName: '_tone_0480_FluidR3_GM_sf2_file' },
-        spc_choir:       { url: 'https://surikov.github.io/webaudiofontdata/sound/0520_FluidR3_GM_sf2_file.js', varName: '_tone_0520_FluidR3_GM_sf2_file' },
-        spc_flute:       { url: 'https://surikov.github.io/webaudiofontdata/sound/0750_FluidR3_GM_sf2_file.js', varName: '_tone_0750_FluidR3_GM_sf2_file' },
-        spc_trumpet:     { url: 'https://surikov.github.io/webaudiofontdata/sound/0610_FluidR3_GM_sf2_file.js', varName: '_tone_0610_FluidR3_GM_sf2_file' },
-        spc_harp:        { url: 'https://surikov.github.io/webaudiofontdata/sound/0460_FluidR3_GM_sf2_file.js', varName: '_tone_0460_FluidR3_GM_sf2_file' },
-        spc_piano:       { url: 'https://surikov.github.io/webaudiofontdata/sound/0000_FluidR3_GM_sf2_file.js', varName: '_tone_0000_FluidR3_GM_sf2_file' },
-        spc_celesta:     { url: 'https://surikov.github.io/webaudiofontdata/sound/0080_FluidR3_GM_sf2_file.js', varName: '_tone_0080_FluidR3_GM_sf2_file' },
-        spc_overdrive:   { url: 'https://surikov.github.io/webaudiofontdata/sound/0290_FluidR3_GM_sf2_file.js', varName: '_tone_0290_FluidR3_GM_sf2_file' },
-        spc_epiano:      { url: 'https://surikov.github.io/webaudiofontdata/sound/0040_FluidR3_GM_sf2_file.js', varName: '_tone_0040_FluidR3_GM_sf2_file' },
-        spc_organ:       { url: 'https://surikov.github.io/webaudiofontdata/sound/0180_FluidR3_GM_sf2_file.js', varName: '_tone_0180_FluidR3_GM_sf2_file' },
-        spc_orch_hit:    { url: 'https://surikov.github.io/webaudiofontdata/sound/0550_FluidR3_GM_sf2_file.js', varName: '_tone_0550_FluidR3_GM_sf2_file' },
-        spc_timpani:     { url: 'https://surikov.github.io/webaudiofontdata/sound/0470_FluidR3_GM_sf2_file.js', varName: '_tone_0470_FluidR3_GM_sf2_file' }
-    };
-
-    function ensureSpcPreset(patchKey) {
-        if (!audioCtx || typeof WebAudioFontPlayer === 'undefined') return;
-        if (!wafPlayer) wafPlayer = new WebAudioFontPlayer();
-        const entry = spcSampleCatalog[patchKey];
-        if (!entry || spcPresets[patchKey]) return;
-        if (window[entry.varName]) {
-            spcPresets[patchKey] = window[entry.varName];
-            return;
-        }
-        spcPresets[patchKey] = 'loading';
-        wafPlayer.loader.startLoad(audioCtx, entry.url, entry.varName);
-        wafPlayer.loader.waitLoad(() => {
-            if (window[entry.varName]) {
-                spcPresets[patchKey] = window[entry.varName];
-            }
-        });
-    }
-
-    function initSpc700Samples() {
-        // Preload the 4 active default patches + choir/flute for instant SNES playback
-        ['spc_finger_bass', 'spc_strings', 'spc_harp', 'spc_epiano', 'spc_choir', 'spc_flute', 'spc_overdrive', 'spc_orch_hit'].forEach(ensureSpcPreset);
-    }
-
     function updateDelayTime(bpmOverride) {
         if(!audioCtx) return;
         const bpm = bpmOverride !== undefined ? parseFloat(bpmOverride) : parseFloat(getActivePart().bpm || 86);
         const beatSec = 60.0 / bpm;
         const multiplier = parseFloat(document.getElementById('fx_delay_time').value);
-        fxNodes.delayNode.delayTime.value = beatSec * 4 * multiplier; // 1.0 = 1 Bar (4 beats)
+        fxNodes.delayNode.delayTime.value = beatSec * 4 * multiplier;
     }
 
     function updateReverbImpulse() {
@@ -2498,57 +2768,34 @@
     }
 
     function playTone(freq, time, type, bus, decayAmt, fxActiveObj, gainScale = 1.0) {
-        ensureSpcPreset(type);
-        const preset = spcPresets[type];
-        const midiNote = Math.max(12, Math.min(108, 69 + 12 * Math.log2(freq / 440)));
-        const dur = Math.max(0.09, decayAmt * 3.8);
+        initSpc700Samples();
+        const voice = spcSampleBank[type] || spcSampleBank.spc_strings;
+        if (!voice || !voice.buffer) return;
 
-        // Route through a dedicated per-note gain node so both bus & FX sends receive the exact SNES signal
-        const noteOut = audioCtx.createGain();
-        noteOut.gain.setValueAtTime(1.0 * gainScale, time);
-        noteOut.connect(bus);
-        routeToFxSends(noteOut, fxActiveObj);
+        const src = audioCtx.createBufferSource();
+        src.buffer = voice.buffer;
+        src.playbackRate.setValueAtTime(freq / voice.baseFreq, time);
 
-        if (wafPlayer && preset && preset !== 'loading' && preset.zones) {
-            wafPlayer.queueWaveTable(audioCtx, noteOut, preset, time, midiNote, dur, 0.92 * gainScale);
-            return;
+        if (voice.loop) {
+            src.loop = true;
+            src.loopStart = voice.loopStart;
+            src.loopEnd = voice.loopEnd;
         }
 
-        // Built-in SPC700 BRR / Harmonic Wavetable Fallback (plays immediately while sample bank decodes or offline)
-        const harmonicProfiles = {
-            spc_finger_bass: { real: [0, 1.0, 0.68, 0.30, 0.12], atk: 0.006 },
-            spc_slap_bass:   { real: [0, 1.0, 0.85, 0.65, 0.45, 0.28], atk: 0.003 },
-            spc_synth_bass:  { real: [0, 1.0, 0.75, 0.55, 0.35, 0.20], atk: 0.005 },
-            spc_tuba:        { real: [0, 1.0, 0.72, 0.45, 0.22, 0.10], atk: 0.022 },
-            spc_strings:     { real: [0, 1.0, 0.72, 0.58, 0.42, 0.30, 0.18, 0.10], atk: 0.035 },
-            spc_choir:       { real: [0, 1.0, 0.35, 0.78, 0.22, 0.45, 0.12, 0.08], atk: 0.045 },
-            spc_flute:       { real: [0, 1.0, 0.28, 0.08, 0.03], atk: 0.025 },
-            spc_trumpet:     { real: [0, 0.85, 1.0, 0.82, 0.65, 0.48, 0.32, 0.20], atk: 0.018 },
-            spc_harp:        { real: [0, 1.0, 0.55, 0.25, 0.12, 0.05], atk: 0.004 },
-            spc_piano:       { real: [0, 1.0, 0.65, 0.38, 0.22, 0.14, 0.08], atk: 0.005 },
-            spc_celesta:     { real: [0, 1.0, 0.05, 0.15, 0.52, 0.04, 0.25], atk: 0.003 },
-            spc_overdrive:   { real: [0, 1.0, 0.92, 0.85, 0.74, 0.62, 0.50, 0.38], atk: 0.005 },
-            spc_epiano:      { real: [0, 1.0, 0.20, 0.42, 0.08, 0.18], atk: 0.006 },
-            spc_organ:       { real: [0, 1.0, 0.85, 0.75, 0.0, 0.55, 0.0, 0.35], atk: 0.010 },
-            spc_orch_hit:    { real: [0, 1.0, 0.90, 0.80, 0.70, 0.60, 0.45, 0.30], atk: 0.004 },
-            spc_timpani:     { real: [0, 1.0, 0.55, 0.20, 0.08], atk: 0.004 }
-        };
-        const prof = harmonicProfiles[type] || harmonicProfiles.spc_strings;
-        const imag = new Float32Array(prof.real.length);
-        const real = new Float32Array(prof.real);
-        const wave = audioCtx.createPeriodicWave(real, imag);
-
-        const osc = audioCtx.createOscillator();
+        // Authentic SPC700 ADSR exponential decay & release envelope
         const env = audioCtx.createGain();
-        osc.setPeriodicWave(wave);
-        osc.frequency.setValueAtTime(freq, time);
+        const peak = 0.88 * gainScale;
+        const sustainTail = Math.max(0.08, decayAmt * 3.6);
         env.gain.setValueAtTime(0.001, time);
-        env.gain.linearRampToValueAtTime(0.85 * gainScale, time + prof.atk);
-        env.gain.setTargetAtTime(0.001, time + prof.atk, decayAmt);
-        osc.connect(env);
-        env.connect(noteOut);
-        osc.start(time);
-        osc.stop(time + decayAmt * 5.2);
+        env.gain.linearRampToValueAtTime(peak, time + 0.004);
+        env.gain.setTargetAtTime(0.0008, time + 0.015, decayAmt);
+
+        src.connect(env);
+        env.connect(bus);
+        routeToFxSends(env, fxActiveObj);
+
+        src.start(time);
+        src.stop(time + sustainTail + 0.12);
     }
 
     function playNoiseSynth(freq, time, bus, decayAmt, fxActiveObj) {
@@ -2565,7 +2812,7 @@
         const data = buffer.getChannelData(0);
 
         if (noiseType === 'metallic') {
-            // 15-bit NES-style short LFSR (93-step period) clocked proportionally to pitch
+            // 15-bit SPC700 LFSR clocked proportionally to pitch
             let lfsr = 0x4000;
             const clockFreq = Math.max(120, freq * 16) / crush;
             const samplesPerClock = Math.max(1, sampleRate / clockFreq);
@@ -2582,7 +2829,7 @@
                 data[i] = currentSample;
             }
         } else if (noiseType === 'crushed') {
-            // Sample-and-hold noise clocked to note pitch & crush divider
+            // Sample-and-hold noise clocked to 32kHz BRR divider
             const clockFreq = Math.max(80, freq * 4) / crush;
             const samplesPerClock = Math.max(1, sampleRate / clockFreq);
             let counter = 0;
@@ -2596,7 +2843,6 @@
                 data[i] = holdVal;
             }
         } else if (noiseType === 'pink') {
-            // Paul Kellet pink noise filter with optional crush hold
             let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
             let held = 0;
             for (let i = 0; i < bufferSize; i++) {
@@ -2614,7 +2860,6 @@
                 data[i] = held;
             }
         } else {
-            // Classic white noise with optional sample-rate crush hold
             let held = 0;
             for (let i = 0; i < bufferSize; i++) {
                 if (i % crush === 0) {
@@ -2654,15 +2899,15 @@
     }
 
     function playNoise(time, type, fxActiveObj) {
-        // SNES SPC700 32kHz Sampled Drum Kit (Warm Body + Filtered BRR Noise)
+        // SNES SPC700 32kHz Sampled Drum Kit (Punchy 16-bit Body + Filtered BRR Noise)
         const individualVol = drumVols[type] !== undefined ? drumVols[type] : 1.0;
 
         if (type === 'kick') {
             const osc = audioCtx.createOscillator();
             const env = audioCtx.createGain();
             osc.type = 'sine';
-            osc.frequency.setValueAtTime(145, time);
-            osc.frequency.exponentialRampToValueAtTime(48, time + 0.11);
+            osc.frequency.setValueAtTime(148, time);
+            osc.frequency.exponentialRampToValueAtTime(46, time + 0.11);
             env.gain.setValueAtTime(1.5 * individualVol, time);
             env.gain.exponentialRampToValueAtTime(0.008, time + 0.22);
             osc.connect(env); env.connect(buses.noi);
@@ -2670,7 +2915,6 @@
             osc.start(time); osc.stop(time + 0.24);
             return;
         } else if (type === 'tom') {
-            // Classic SNES Orchestral/Concert Tom
             const osc = audioCtx.createOscillator();
             const env = audioCtx.createGain();
             osc.type = 'triangle';
@@ -2683,7 +2927,6 @@
             osc.start(time); osc.stop(time + 0.26);
             return;
         } else if (type === 'zap') {
-            // Classic SNES Mode-7 / Sci-Fi Sweep SFX
             const osc = audioCtx.createOscillator();
             const filter = audioCtx.createBiquadFilter();
             const env = audioCtx.createGain();
@@ -2701,20 +2944,19 @@
             return;
         }
 
-        // 32kHz S-DSP Sampled Noise Buffer
-        const bufferSize = Math.ceil(audioCtx.sampleRate * 0.45);
-        const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
-        const data = buffer.getChannelData(0);
-        let held = 0;
-        for (let i = 0; i < bufferSize; i++) {
-            if (i % 2 === 0) held = Math.random() * 2 - 1;
-            data[i] = held;
-        }
+        // 32kHz S-DSP BRR Sampled Noise Buffer
+        const bufferSize = Math.ceil(SPC_BASE_RATE * 0.45);
+        const raw = new Float32Array(bufferSize);
+        for (let i = 0; i < bufferSize; i++) raw[i] = Math.random() * 2 - 1;
+        const processed = applySnesBrrAndGaussian(raw);
+        const buffer = audioCtx.createBuffer(1, bufferSize, SPC_BASE_RATE);
+        buffer.getChannelData(0).set(processed);
+
         const noise = audioCtx.createBufferSource(); noise.buffer = buffer;
         const env = audioCtx.createGain(); const filter = audioCtx.createBiquadFilter();
 
         if (type === 'snare') {
-            // Warm 16-bit Acoustic Snare (200Hz shell + gated white noise)
+            // Warm 16-bit Acoustic Snare (205Hz shell + gated BRR noise)
             const shell = audioCtx.createOscillator();
             const shellEnv = audioCtx.createGain();
             shell.type = 'triangle';
@@ -2787,7 +3029,6 @@
             playNoiseSynth(freq, audioCtx.currentTime, buses.sq3, dec, { dly: false, rev: false, chs: false, dst: false });
         } else {
             let wave = document.getElementById(target + '_wave') ? document.getElementById(target + '_wave').value : 'spc_strings';
-            ensureSpcPreset(wave);
             playTone(freq, audioCtx.currentTime, wave, buses[target], dec, { dly: false, rev: false, chs: false, dst: false });
         }
 
@@ -3477,586 +3718,574 @@
     renderPolyGrid();
     renderNoiseGrid();
     renderKeyboard();
-        ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) el.addEventListener('change', () => ensureSpcPreset(el.value));
-    });
     renderSongProgression();
 
-  // =========================================================================
-  // --- EN-16 PNG CARTRIDGE EXPORT & IMPORT SYSTEM ---
-  // =========================================================================
-  const songTitleInput = document.getElementById('songTitleInput');
-  const exportPngBtn = document.getElementById('exportPngBtn');
-  const importPngBtn = document.getElementById('importPngBtn');
-  const importPngFile = document.getElementById('importPngFile');
-  const cartStatusEl = document.getElementById('cartStatus');
+    // =========================================================================
+    // --- EN-16 PNG CARTRIDGE EXPORT & IMPORT SYSTEM ---
+    // =========================================================================
+    const songTitleInput = document.getElementById('songTitleInput');
+    const exportPngBtn = document.getElementById('exportPngBtn');
+    const importPngBtn = document.getElementById('importPngBtn');
+    const importPngFile = document.getElementById('importPngFile');
+    const cartStatusEl = document.getElementById('cartStatus');
 
-  let statusHideTimer = null;
-  function showCartStatus(msg, isError = false) {
-    cartStatusEl.textContent = msg;
-    cartStatusEl.style.color = isError ? 'var(--nes-red)' : 'var(--solo-yellow)';
-    cartStatusEl.classList.add('visible');
-    clearTimeout(statusHideTimer);
-    statusHideTimer = setTimeout(() => {
-      cartStatusEl.classList.remove('visible');
-    }, 5000);
-  }
+    let statusHideTimer = null;
+    function showCartStatus(msg, isError = false) {
+        cartStatusEl.textContent = msg;
+        cartStatusEl.style.color = isError ? 'var(--nes-red)' : 'var(--solo-yellow)';
+        cartStatusEl.classList.add('visible');
+        clearTimeout(statusHideTimer);
+        statusHideTimer = setTimeout(() => {
+            cartStatusEl.classList.remove('visible');
+        }, 5000);
+    }
 
-  function sanitizeFilename(rawName) {
-    const cleaned = (rawName || '').trim()
-      .replace(/[<>:"/\\|?*\x00-\x1F]/g, '')
-      .replace(/\s+/g, '_');
-    return cleaned || 'UNTITLED_SONG';
-  }
+    function sanitizeFilename(rawName) {
+        const cleaned = (rawName || '').trim()
+            .replace(/[<>:"/\\|?*\x00-\x1F]/g, '')
+            .replace(/\s+/g, '_');
+        return cleaned || 'UNTITLED_SONG';
+    }
 
-  function serializeAppState() {
-    const domInputIds = [
-      // Mixer
-      'noi_vol', 'tri_vol', 'mel_vol', 'sq1_vol', 'sq2_vol', 'sq3_vol', 'masterVol',
-      // Bass & Melo
-      'tri_wave', 'tri_oct', 'tri_speed', 'tri_dec',
-      'mel_wave', 'mel_oct', 'mel_speed', 'mel_dec',
-      // Mono (sq1)
-      'sq1_wave', 'sq1_oct', 'sq1_speed', 'sq1_dir', 'sq1_dec',
-      // Poly (sq2)
-      'sq2_wave', 'sq2_oct', 'sq2_speed', 'sq2_dir', 'sq2_dec',
-      // Noise (sq3)
-      'sq3_noise_type', 'sq3_filter_type', 'sq3_res', 'sq3_crush', 'sq3_sweep',
-      'sq3_oct', 'sq3_speed', 'sq3_dir', 'sq3_dec',
-      // FX
-      'fx_delay_time', 'fx_delay_feedback', 'fx_delay_damping', 'fx_delay_spread', 'fx_delay_mix',
-      'fx_reverb_room', 'fx_reverb_decay', 'fx_reverb_damping', 'fx_reverb_predelay', 'fx_reverb_mix',
-      'fx_chorus_rate', 'fx_chorus_depth', 'fx_chorus_feedback', 'fx_chorus_voices', 'fx_chorus_mix',
-      'fx_dist_drive', 'fx_dist_tone', 'fx_dist_symmetry', 'fx_dist_hpf', 'fx_dist_mix',
-      // Performance
-      'perf_target'
-    ];
+    function serializeAppState() {
+        const domInputIds = [
+            // Mixer
+            'noi_vol', 'tri_vol', 'mel_vol', 'sq1_vol', 'sq2_vol', 'sq3_vol', 'masterVol',
+            // Bass & Melo
+            'tri_wave', 'tri_oct', 'tri_speed', 'tri_dec',
+            'mel_wave', 'mel_oct', 'mel_speed', 'mel_dec',
+            // Mono (sq1)
+            'sq1_wave', 'sq1_oct', 'sq1_speed', 'sq1_dir', 'sq1_dec',
+            // Poly (sq2)
+            'sq2_wave', 'sq2_oct', 'sq2_speed', 'sq2_dir', 'sq2_dec',
+            // Noise (sq3)
+            'sq3_noise_type', 'sq3_filter_type', 'sq3_res', 'sq3_crush', 'sq3_sweep',
+            'sq3_oct', 'sq3_speed', 'sq3_dir', 'sq3_dec',
+            // FX
+            'fx_delay_time', 'fx_delay_feedback', 'fx_delay_damping', 'fx_delay_spread', 'fx_delay_mix',
+            'fx_reverb_room', 'fx_reverb_decay', 'fx_reverb_damping', 'fx_reverb_predelay', 'fx_reverb_mix',
+            'fx_chorus_rate', 'fx_chorus_depth', 'fx_chorus_feedback', 'fx_chorus_voices', 'fx_chorus_mix',
+            'fx_dist_drive', 'fx_dist_tone', 'fx_dist_symmetry', 'fx_dist_hpf', 'fx_dist_mix',
+            // Performance
+            'perf_target'
+        ];
 
-    const controls = {};
-    domInputIds.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) controls[id] = el.value;
-    });
+        const controls = {};
+        domInputIds.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) controls[id] = el.value;
+        });
 
-    return {
-      format: 'EN16-CART',
-      version: 1,
-      exportedAt: new Date().toISOString(),
-      songTitle: (songTitleInput.value || '').trim() || 'UNTITLED_SONG',
-      songParts: JSON.parse(JSON.stringify(songParts)),
-      partOrder: [...partOrder],
-      loopPartId: loopPartId,
-      drumVols: { ...drumVols },
-      isMuted: { ...isMuted },
-      isSoloed: { ...isSoloed },
-      arpSeqData: [...arpSeqData],
-      sq1Steps,
-      sq1LockTimeSig,
-      polySeqData: polySeqData.map(arr => [...arr]),
-      sq2Steps,
-      sq2LockTimeSig,
-      noiseSeqData: [...noiseSeqData],
-      sq3Steps,
-      sq3LockTimeSig,
-      perfLoops: JSON.parse(JSON.stringify(perfLoops)),
-      perfLoopActive,
-      perfLoopDuration,
-      controls
+        return {
+            format: 'EN16-CART',
+            version: 1,
+            exportedAt: new Date().toISOString(),
+            songTitle: (songTitleInput.value || '').trim() || 'UNTITLED_SONG',
+            songParts: JSON.parse(JSON.stringify(songParts)),
+            partOrder: [...partOrder],
+            loopPartId: loopPartId,
+            drumVols: { ...drumVols },
+            isMuted: { ...isMuted },
+            isSoloed: { ...isSoloed },
+            arpSeqData: [...arpSeqData],
+            sq1Steps,
+            sq1LockTimeSig,
+            polySeqData: polySeqData.map(arr => [...arr]),
+            sq2Steps,
+            sq2LockTimeSig,
+            noiseSeqData: [...noiseSeqData],
+            sq3Steps,
+            sq3LockTimeSig,
+            perfLoops: JSON.parse(JSON.stringify(perfLoops)),
+            perfLoopActive,
+            perfLoopDuration,
+            controls
+        };
+    }
+
+    function applyAppState(state) {
+        if (!state || state.format !== 'EN16-CART' || !state.songParts) {
+            throw new Error('Invalid or unrecognized EN-16 PNG cartridge.');
+        }
+
+        // Stop active playback cleanly before swapping state
+        if (isPlaying) {
+            isPlaying = false;
+            clearTimeout(timerID);
+            syncTransportButtons();
+        }
+        playheadPartIdx = 0;
+        playheadStep = 0;
+        globalStepCounter = 0;
+        partElapsedSteps = 0;
+        lastPartSlotKey = null;
+
+        // 1. Song Title
+        const loadedTitle = (state.songTitle || 'UNTITLED_SONG').trim();
+        songTitleInput.value = loadedTitle;
+
+        // 2. Song Parts & Timeline
+        songParts = {};
+        Object.entries(state.songParts).forEach(([id, part]) => {
+            const drums = [];
+            for (let r = 0; r < drumTracks.length; r++) {
+                const srcRow = (part.drums && part.drums[r]) ? part.drums[r] : [];
+                const row = [];
+                for (let c = 0; c < 64; c++) row.push(Boolean(srcRow[c]));
+                drums.push(row);
+            }
+            const melData = Array(64).fill(null);
+            if (Array.isArray(part.melData)) {
+                for (let c = 0; c < 64; c++) melData[c] = part.melData[c] !== undefined ? part.melData[c] : null;
+            }
+            const bassData = Array(64).fill(null);
+            if (Array.isArray(part.bassData)) {
+                for (let c = 0; c < 64; c++) bassData[c] = part.bassData[c] !== undefined ? part.bassData[c] : null;
+            }
+            songParts[id] = {
+                id: part.id || id,
+                name: part.name || 'Part',
+                timeSig: parseInt(part.timeSig) || 16,
+                bpm: parseInt(part.bpm) || 86,
+                keyRoot: part.keyRoot !== undefined ? parseInt(part.keyRoot) : 4,
+                keyMode: part.keyMode || 'minor',
+                chords: Array.isArray(part.chords) ? [...part.chords] : [],
+                drums,
+                melData,
+                bassData,
+                tracksActive: Object.assign({ sq1: true, sq2: true, sq3: true, tri: true, mel: true, noi: true }, part.tracksActive || {}),
+                fxActive: {
+                    sq1: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.sq1 || {}),
+                    sq2: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.sq2 || {}),
+                    sq3: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.sq3 || {}),
+                    tri: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.tri || {}),
+                    mel: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.mel || {}),
+                    noi: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.noi || {})
+                }
+            };
+        });
+
+        partOrder = Array.isArray(state.partOrder) ? state.partOrder.filter(id => Boolean(songParts[id])) : Object.keys(songParts);
+        loopPartId = (state.loopPartId && songParts[state.loopPartId]) ? state.loopPartId : null;
+
+        // 3. Mixer Mute, Solo & Individual Drum Volumes
+        isMuted = Object.assign({ sq1: false, sq2: false, sq3: false, tri: false, mel: false, noi: false }, state.isMuted || {});
+        isSoloed = Object.assign({ sq1: false, sq2: false, sq3: false, tri: false, mel: false, noi: false }, state.isSoloed || {});
+        document.querySelectorAll('.mute-btn').forEach(btn => {
+            btn.classList.toggle('muted', Boolean(isMuted[btn.dataset.track]));
+        });
+        document.querySelectorAll('.solo-btn').forEach(btn => {
+            btn.classList.toggle('active', Boolean(isSoloed[btn.dataset.track]));
+        });
+
+        drumVols = Object.assign({ kick: 1.1, snare: 0.76, hat: 0.8, openhat: 0.8, clap: 1.0, rim: 0.9, tom: 1.1, zap: 0.8 }, state.drumVols || {});
+        document.querySelectorAll('.drum-fader').forEach(fader => {
+            const d = fader.dataset.drum;
+            if (drumVols[d] !== undefined) fader.value = drumVols[d];
+        });
+
+        // 4. Independent / Time-Sig Locked Sequencers (Tracks 4, 5, 6)
+        arpSeqData = Array(64).fill(null);
+        if (Array.isArray(state.arpSeqData)) {
+            for (let i = 0; i < 64; i++) arpSeqData[i] = state.arpSeqData[i] !== undefined ? state.arpSeqData[i] : null;
+        }
+        sq1Steps = parseInt(state.sq1Steps) || 16;
+        sq1LockTimeSig = state.sq1LockTimeSig !== undefined ? Boolean(state.sq1LockTimeSig) : true;
+
+        polySeqData = Array.from({ length: 64 }, () => []);
+        if (Array.isArray(state.polySeqData)) {
+            for (let i = 0; i < 64; i++) {
+                if (Array.isArray(state.polySeqData[i])) polySeqData[i] = [...state.polySeqData[i]];
+            }
+        }
+        sq2Steps = parseInt(state.sq2Steps) || 16;
+        sq2LockTimeSig = state.sq2LockTimeSig !== undefined ? Boolean(state.sq2LockTimeSig) : true;
+
+        noiseSeqData = Array(64).fill(null);
+        if (Array.isArray(state.noiseSeqData)) {
+            for (let i = 0; i < 64; i++) noiseSeqData[i] = state.noiseSeqData[i] !== undefined ? state.noiseSeqData[i] : null;
+        }
+        sq3Steps = parseInt(state.sq3Steps) || 16;
+        sq3LockTimeSig = state.sq3LockTimeSig !== undefined ? Boolean(state.sq3LockTimeSig) : true;
+
+        // 5. Performance State
+        perfLoops = state.perfLoops ? JSON.parse(JSON.stringify(state.perfLoops)) : {};
+        perfLoopActive = Boolean(state.perfLoopActive);
+        perfLoopDuration = parseFloat(state.perfLoopDuration) || 4.0;
+        perfLoopBtn.classList.toggle('active', perfLoopActive);
+        perfLoopBtn.innerText = perfLoopActive ? '↻ LOOPING ON' : '↻ LOOP OFF';
+
+        // 6. All Synth, Mixer, and FX DOM Controls
+        if (state.controls && typeof state.controls === 'object') {
+            Object.entries(state.controls).forEach(([id, val]) => {
+                const el = document.getElementById(id);
+                if (el && val !== undefined && val !== null) {
+                    el.value = val;
+                }
+            });
+        }
+
+        // Sync Live Web Audio DSP Nodes if initialized
+        updateMasterVolume();
+        if (audioCtx) {
+            Object.keys(buses).forEach(t => updateMixerGain(t));
+            updateDelayTime();
+            if (fxNodes.delayFeedback) fxNodes.delayFeedback.gain.value = parseFloat(document.getElementById('fx_delay_feedback').value);
+            if (fxNodes.delayFilter) fxNodes.delayFilter.frequency.value = parseFloat(document.getElementById('fx_delay_damping').value);
+            if (fxNodes.delayWet) fxNodes.delayWet.gain.value = parseFloat(document.getElementById('fx_delay_mix').value);
+            updateReverbImpulse();
+            if (fxNodes.reverbWet) fxNodes.reverbWet.gain.value = parseFloat(document.getElementById('fx_reverb_mix').value);
+            if (fxNodes.chorusDelay) fxNodes.chorusDelay.delayTime.value = parseFloat(document.getElementById('fx_chorus_depth').value);
+            if (fxNodes.chorusWet) fxNodes.chorusWet.gain.value = parseFloat(document.getElementById('fx_chorus_mix').value);
+            if (fxNodes.distShaper) fxNodes.distShaper.curve = makeDistortionCurve(parseFloat(document.getElementById('fx_dist_drive').value));
+            if (fxNodes.distFilter) fxNodes.distFilter.frequency.value = parseFloat(document.getElementById('fx_dist_tone').value);
+            if (fxNodes.distWet) fxNodes.distWet.gain.value = parseFloat(document.getElementById('fx_dist_mix').value);
+        }
+
+        // Sync Performance Target View
+        if (perfTarget.value === 'drums') {
+            mpcSection.style.display = 'block';
+            keyboardSection.style.display = 'none';
+        } else {
+            mpcSection.style.display = 'none';
+            keyboardSection.style.display = 'block';
+        }
+
+        // Re-render all UI panels & grids
+        renderPartPool();
+        renderSongProgression();
+        renderParts();
+        renderArpGrid();
+        renderPolyGrid();
+        renderNoiseGrid();
+        renderKeyboard();
+        updatePartJumpLinks();
+    }
+
+    // --- PNG Chunk & Pixel Steganography Encoder / Decoder ---
+    const PNG_SIGNATURE = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]);
+    const CHUNK_TYPE = 'en6S';
+    const MAGIC_BYTES = [69, 78, 49, 54];
+
+    const crcTable = (() => {
+        const table = new Uint32Array(256);
+        for (let n = 0; n < 256; n++) {
+            let c = n;
+            for (let k = 0; k < 8; k++) {
+                c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
+            }
+            table[n] = c >>> 0;
+        }
+        return table;
+    })();
+
+    function crc32(bytes) {
+        let crc = 0xFFFFFFFF;
+        for (let i = 0; i < bytes.length; i++) {
+            crc = crcTable[(crc ^ bytes[i]) & 0xFF] ^ (crc >>> 8);
+        }
+        return (crc ^ 0xFFFFFFFF) >>> 0;
+    }
+
+    function createPngChunk(typeStr, dataBytes) {
+        const typeBytes = new TextEncoder().encode(typeStr);
+        const len = dataBytes.length;
+        const chunk = new Uint8Array(12 + len);
+        const view = new DataView(chunk.buffer);
+        view.setUint32(0, len, false);
+        chunk.set(typeBytes, 4);
+        chunk.set(dataBytes, 8);
+
+        const crcInput = new Uint8Array(4 + len);
+        crcInput.set(typeBytes, 0);
+        crcInput.set(dataBytes, 4);
+        view.setUint32(8 + len, crc32(crcInput), false);
+        return chunk;
+    }
+
+    function injectChunkIntoPng(pngBytes, typeStr, payloadBytes) {
+        for (let i = 0; i < 8; i++) {
+            if (pngBytes[i] !== PNG_SIGNATURE[i]) throw new Error('Generated buffer is not a valid PNG.');
+        }
+        let offset = 8;
+        let iendOffset = -1;
+        const view = new DataView(pngBytes.buffer, pngBytes.byteOffset, pngBytes.byteLength);
+        while (offset + 12 <= pngBytes.length) {
+            const length = view.getUint32(offset, false);
+            const type = String.fromCharCode(
+                pngBytes[offset + 4],
+                pngBytes[offset + 5],
+                pngBytes[offset + 6],
+                pngBytes[offset + 7]
+            );
+            if (type === 'IEND') {
+                iendOffset = offset;
+                break;
+            }
+            offset += 12 + length;
+        }
+        if (iendOffset === -1) throw new Error('PNG IEND chunk not found.');
+
+        const customChunk = createPngChunk(typeStr, payloadBytes);
+        const result = new Uint8Array(pngBytes.length + customChunk.length);
+        result.set(pngBytes.subarray(0, iendOffset), 0);
+        result.set(customChunk, iendOffset);
+        result.set(pngBytes.subarray(iendOffset), iendOffset + customChunk.length);
+        return result;
+    }
+
+    function extractChunkFromPng(pngBytes, typeStr) {
+        if (pngBytes.length < 24) return null;
+        for (let i = 0; i < 8; i++) {
+            if (pngBytes[i] !== PNG_SIGNATURE[i]) return null;
+        }
+        let offset = 8;
+        const view = new DataView(pngBytes.buffer, pngBytes.byteOffset, pngBytes.byteLength);
+        while (offset + 12 <= pngBytes.length) {
+            const length = view.getUint32(offset, false);
+            if (offset + 12 + length > pngBytes.length) break;
+            const type = String.fromCharCode(
+                pngBytes[offset + 4],
+                pngBytes[offset + 5],
+                pngBytes[offset + 6],
+                pngBytes[offset + 7]
+            );
+            if (type === typeStr) {
+                return pngBytes.subarray(offset + 8, offset + 8 + length);
+            }
+            offset += 12 + length;
+        }
+        return null;
+    }
+
+    // Render a console-authentic Cartridge PNG with embedded data strip + lossless PNG chunk
+    async function buildCartridgePngBlob(stateObj) {
+        const jsonStr = JSON.stringify(stateObj);
+        const payloadBytes = new TextEncoder().encode(jsonStr);
+
+        const stripTotalBytes = 8 + payloadBytes.length;
+        const pixelsNeeded = Math.ceil(stripTotalBytes / 3);
+        const width = 480;
+        const artHeight = 250;
+        const dataRows = Math.max(4, Math.ceil(pixelsNeeded / width));
+        const height = artHeight + dataRows;
+
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+
+        const firstPartId = stateObj.partOrder[0] || Object.keys(stateObj.songParts)[0];
+        const firstPart = stateObj.songParts[firstPartId];
+        const bpmText = firstPart ? `${firstPart.bpm} BPM` : '86 BPM';
+        const keyText = firstPart ? `${keyNames[firstPart.keyRoot] || 'E'} ${(firstPart.keyMode || 'minor').toUpperCase()}` : 'E MINOR';
+        const partsCount = Object.keys(stateObj.songParts).length;
+        const titleDisplay = (stateObj.songTitle || 'UNTITLED_SONG').toUpperCase();
+
+        // --- Draw SNES 16-Bit Cartridge Artwork ---
+        ctx.fillStyle = '#1A1824';
+        ctx.fillRect(0, 0, width, artHeight);
+
+        // Classic SNES grey shell with dual side lock slots
+        const cartX = 32, cartY = 12, cartW = width - 64, cartH = 228;
+        ctx.fillStyle = '#8E8AA8';
+        ctx.fillRect(cartX, cartY, cartW, cartH);
+        ctx.fillStyle = '#6E6A86';
+        ctx.fillRect(cartX + 6, cartY + 6, cartW - 12, cartH - 12);
+
+        // SNES horizontal grip ridges & center notch
+        ctx.fillStyle = '#4B485E';
+        for (let y = 24; y <= 66; y += 8) {
+            ctx.fillRect(cartX + 16, y, 64, 4);
+            ctx.fillRect(cartX + cartW - 80, y, 64, 4);
+        }
+
+        // Center SNES concave label recess
+        const lblX = cartX + 94, lblY = cartY + 14, lblW = cartW - 188, lblH = 194;
+        ctx.fillStyle = '#191726';
+        ctx.fillRect(lblX, lblY, lblW, lblH);
+        ctx.strokeStyle = '#7B5CD6';
+        ctx.lineWidth = 3;
+        ctx.strokeRect(lblX + 1.5, lblY + 1.5, lblW - 3, lblH - 3);
+
+        // SNES Purple & Super Famicom 4-color accent bar
+        ctx.fillStyle = '#7B5CD6';
+        ctx.fillRect(lblX + 6, lblY + 6, lblW - 12, 32);
+        const sfcColors = ['#E11D48', '#EAB308', '#22C55E', '#3B78FF'];
+        sfcColors.forEach((col, idx) => {
+            ctx.fillStyle = col;
+            ctx.fillRect(lblX + 6 + idx * ((lblW - 12) / 4), lblY + 38, (lblW - 12) / 4, 4);
+        });
+
+        ctx.fillStyle = '#FFFFFF';
+        ctx.font = 'bold 14px "Press Start 2P", monospace';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('EN-16', lblX + 12, lblY + 23);
+
+        ctx.fillStyle = '#FACC15';
+        ctx.font = '7px "Press Start 2P", monospace';
+        ctx.fillText('SPC700 CART', lblX + 122, lblY + 23);
+
+        // Song Title
+        ctx.fillStyle = '#9D8DF1';
+        ctx.font = '9px "Press Start 2P", monospace';
+        const maxChars = 21;
+        const line1 = titleDisplay.slice(0, maxChars);
+        const line2 = titleDisplay.slice(maxChars, maxChars * 2);
+        ctx.fillText(line1, lblX + 12, lblY + 64);
+        if (line2) {
+            ctx.fillText(line2, lblX + 12, lblY + 80);
+        }
+
+        // Metadata
+        ctx.fillStyle = '#F2F1F8';
+        ctx.font = '8px "Press Start 2P", monospace';
+        ctx.fillText(`PARTS: ${partsCount} | ${bpmText}`, lblX + 12, lblY + 110);
+        ctx.fillStyle = '#22C55E';
+        ctx.fillText(`KEY: ${keyText}`, lblX + 12, lblY + 128);
+
+        // SPC700 8-channel visualizer bars
+        const snesBars = ['#7B5CD6', '#9D8DF1', '#3B78FF', '#22C55E', '#EAB308', '#E11D48'];
+        for (let i = 0; i < 16; i++) {
+            const bx = lblX + 12 + i * 12.5;
+            const activeH = 8 + ((i * 5 + partsCount * 7) % 28);
+            ctx.fillStyle = snesBars[i % snesBars.length];
+            ctx.fillRect(bx, lblY + lblH - 12 - activeH, 9, activeH);
+        }
+
+        // Bottom edge connector
+        ctx.fillStyle = '#1A1824';
+        ctx.fillRect(140, artHeight - 10, width - 280, 10);
+
+        // --- Write Raw RGB Data Strip at Bottom of Image ---
+        const stripBuffer = new Uint8Array(pixelsNeeded * 3);
+        stripBuffer[0] = MAGIC_BYTES[0];
+        stripBuffer[1] = MAGIC_BYTES[1];
+        stripBuffer[2] = MAGIC_BYTES[2];
+        stripBuffer[3] = MAGIC_BYTES[3];
+        const stripView = new DataView(stripBuffer.buffer);
+        stripView.setUint32(4, payloadBytes.length, false);
+        stripBuffer.set(payloadBytes, 8);
+
+        const imgData = ctx.createImageData(width, dataRows);
+        const px = imgData.data;
+        for (let p = 0; p < width * dataRows; p++) {
+            const sIdx = p * 3;
+            const dIdx = p * 4;
+            px[dIdx]     = sIdx < stripBuffer.length ? stripBuffer[sIdx] : 0;
+            px[dIdx + 1] = sIdx + 1 < stripBuffer.length ? stripBuffer[sIdx + 1] : 0;
+            px[dIdx + 2] = sIdx + 2 < stripBuffer.length ? stripBuffer[sIdx + 2] : 0;
+            px[dIdx + 3] = 255;
+        }
+        ctx.putImageData(imgData, 0, artHeight);
+
+        const rawBlob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+        const rawArrayBuf = await rawBlob.arrayBuffer();
+        const rawPngBytes = new Uint8Array(rawArrayBuf);
+        const finalPngBytes = injectChunkIntoPng(rawPngBytes, CHUNK_TYPE, payloadBytes);
+
+        return new Blob([finalPngBytes], { type: 'image/png' });
+    }
+
+    async function decodeCartridgePngFile(file) {
+        const arrayBuf = await file.arrayBuffer();
+        const pngBytes = new Uint8Array(arrayBuf);
+
+        // Method 1: Fast lossless extraction from custom PNG ancillary chunk
+        const chunkBytes = extractChunkFromPng(pngBytes, CHUNK_TYPE);
+        if (chunkBytes) {
+            const jsonStr = new TextDecoder().decode(chunkBytes);
+            return JSON.parse(jsonStr);
+        }
+
+        // Method 2: Fallback extraction from the RGB pixel data strip at the bottom of the image
+        const bitmapUrl = URL.createObjectURL(file);
+        try {
+            const img = await new Promise((resolve, reject) => {
+                const image = new Image();
+                image.onload = () => resolve(image);
+                image.onerror = () => reject(new Error('Unable to read PNG image.'));
+                image.src = bitmapUrl;
+            });
+
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+
+            const artHeight = 250;
+            if (img.height <= artHeight) {
+                throw new Error('This PNG does not contain EN-16 cartridge data.');
+            }
+
+            const dataRows = img.height - artHeight;
+            const imgData = ctx.getImageData(0, artHeight, img.width, dataRows).data;
+            const totalPixels = img.width * dataRows;
+            const rawBytes = new Uint8Array(totalPixels * 3);
+            for (let p = 0; p < totalPixels; p++) {
+                rawBytes[p * 3]     = imgData[p * 4];
+                rawBytes[p * 3 + 1] = imgData[p * 4 + 1];
+                rawBytes[p * 3 + 2] = imgData[p * 4 + 2];
+            }
+
+            if (rawBytes[0] !== MAGIC_BYTES[0] || rawBytes[1] !== MAGIC_BYTES[1] || rawBytes[2] !== MAGIC_BYTES[2] || rawBytes[3] !== MAGIC_BYTES[3]) {
+                throw new Error('This PNG does not contain valid EN-16 song data.');
+            }
+
+            const view = new DataView(rawBytes.buffer);
+            const payloadLen = view.getUint32(4, false);
+            if (payloadLen <= 0 || 8 + payloadLen > rawBytes.length) {
+                throw new Error('Corrupted EN-16 data strip in PNG.');
+            }
+
+            const payloadSlice = rawBytes.subarray(8, 8 + payloadLen);
+            const jsonStr = new TextDecoder().decode(payloadSlice);
+            return JSON.parse(jsonStr);
+        } finally {
+            URL.revokeObjectURL(bitmapUrl);
+        }
+    }
+
+    exportPngBtn.onclick = async () => {
+        try {
+            const stateObj = serializeAppState();
+            const safeFilename = sanitizeFilename(stateObj.songTitle) + '.png';
+            const pngBlob = await buildCartridgePngBlob(stateObj);
+
+            const url = URL.createObjectURL(pngBlob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = safeFilename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 1500);
+
+            showCartStatus(`SAVED CARTRIDGE: ${safeFilename}`);
+        } catch (err) {
+            console.error(err);
+            showCartStatus('EXPORT FAILED: ' + err.message, true);
+        }
     };
-  }
 
-  function applyAppState(state) {
-    if (!state || state.format !== 'EN16-CART' || !state.songParts) {
-      throw new Error('Invalid or unrecognized EN-16 PNG cartridge.');
-    }
+    importPngBtn.onclick = () => {
+        importPngFile.value = '';
+        importPngFile.click();
+    };
 
-    // Stop active playback cleanly before swapping state
-    if (isPlaying) {
-      isPlaying = false;
-      clearTimeout(timerID);
-      syncTransportButtons();
-    }
-    playheadPartIdx = 0;
-    playheadStep = 0;
-    globalStepCounter = 0;
-    partElapsedSteps = 0;
-    lastPartSlotKey = null;
-
-    // 1. Song Title
-    const loadedTitle = (state.songTitle || 'UNTITLED_SONG').trim();
-    songTitleInput.value = loadedTitle;
-
-    // 2. Song Parts & Timeline
-    songParts = {};
-    Object.entries(state.songParts).forEach(([id, part]) => {
-      const drums = [];
-      for (let r = 0; r < drumTracks.length; r++) {
-        const srcRow = (part.drums && part.drums[r]) ? part.drums[r] : [];
-        const row = [];
-        for (let c = 0; c < 64; c++) row.push(Boolean(srcRow[c]));
-        drums.push(row);
-      }
-      const melData = Array(64).fill(null);
-      if (Array.isArray(part.melData)) {
-        for (let c = 0; c < 64; c++) melData[c] = part.melData[c] !== undefined ? part.melData[c] : null;
-      }
-      const bassData = Array(64).fill(null);
-      if (Array.isArray(part.bassData)) {
-        for (let c = 0; c < 64; c++) bassData[c] = part.bassData[c] !== undefined ? part.bassData[c] : null;
-      }
-      songParts[id] = {
-        id: part.id || id,
-        name: part.name || 'Part',
-        timeSig: parseInt(part.timeSig) || 16,
-        bpm: parseInt(part.bpm) || 86,
-        keyRoot: part.keyRoot !== undefined ? parseInt(part.keyRoot) : 4,
-        keyMode: part.keyMode || 'minor',
-        chords: Array.isArray(part.chords) ? [...part.chords] : [],
-        drums,
-        melData,
-        bassData,
-        tracksActive: Object.assign({ sq1: true, sq2: true, sq3: true, tri: true, mel: true, noi: true }, part.tracksActive || {}),
-        fxActive: {
-          sq1: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.sq1 || {}),
-          sq2: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.sq2 || {}),
-          sq3: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.sq3 || {}),
-          tri: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.tri || {}),
-          mel: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.mel || {}),
-          noi: Object.assign({ dly: false, rev: false, chs: false, dst: false }, part.fxActive?.noi || {})
+    importPngFile.onchange = async (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        try {
+            const stateObj = await decodeCartridgePngFile(file);
+            applyAppState(stateObj);
+            showCartStatus(`LOADED SONG: "${stateObj.songTitle || 'UNTITLED_SONG'}"`);
+        } catch (err) {
+            console.error(err);
+            showCartStatus('LOAD FAILED: ' + err.message, true);
         }
-      };
-    });
-
-    partOrder = Array.isArray(state.partOrder) ? state.partOrder.filter(id => Boolean(songParts[id])) : Object.keys(songParts);
-    loopPartId = (state.loopPartId && songParts[state.loopPartId]) ? state.loopPartId : null;
-
-    // 3. Mixer Mute, Solo & Individual Drum Volumes
-    isMuted = Object.assign({ sq1: false, sq2: false, sq3: false, tri: false, mel: false, noi: false }, state.isMuted || {});
-    isSoloed = Object.assign({ sq1: false, sq2: false, sq3: false, tri: false, mel: false, noi: false }, state.isSoloed || {});
-    document.querySelectorAll('.mute-btn').forEach(btn => {
-      btn.classList.toggle('muted', Boolean(isMuted[btn.dataset.track]));
-    });
-    document.querySelectorAll('.solo-btn').forEach(btn => {
-      btn.classList.toggle('active', Boolean(isSoloed[btn.dataset.track]));
-    });
-
-    drumVols = Object.assign({ kick: 1.1, snare: 0.76, hat: 0.8, openhat: 0.8, clap: 1.0, rim: 0.9, tom: 1.1, zap: 0.8 }, state.drumVols || {});
-    document.querySelectorAll('.drum-fader').forEach(fader => {
-      const d = fader.dataset.drum;
-      if (drumVols[d] !== undefined) fader.value = drumVols[d];
-    });
-
-    // 4. Independent / Time-Sig Locked Sequencers (Tracks 4, 5, 6)
-    arpSeqData = Array(64).fill(null);
-    if (Array.isArray(state.arpSeqData)) {
-      for (let i = 0; i < 64; i++) arpSeqData[i] = state.arpSeqData[i] !== undefined ? state.arpSeqData[i] : null;
-    }
-    sq1Steps = parseInt(state.sq1Steps) || 16;
-    sq1LockTimeSig = state.sq1LockTimeSig !== undefined ? Boolean(state.sq1LockTimeSig) : true;
-
-    polySeqData = Array.from({ length: 64 }, () => []);
-    if (Array.isArray(state.polySeqData)) {
-      for (let i = 0; i < 64; i++) {
-        if (Array.isArray(state.polySeqData[i])) polySeqData[i] = [...state.polySeqData[i]];
-      }
-    }
-    sq2Steps = parseInt(state.sq2Steps) || 16;
-    sq2LockTimeSig = state.sq2LockTimeSig !== undefined ? Boolean(state.sq2LockTimeSig) : true;
-
-    noiseSeqData = Array(64).fill(null);
-    if (Array.isArray(state.noiseSeqData)) {
-      for (let i = 0; i < 64; i++) noiseSeqData[i] = state.noiseSeqData[i] !== undefined ? state.noiseSeqData[i] : null;
-    }
-    sq3Steps = parseInt(state.sq3Steps) || 16;
-    sq3LockTimeSig = state.sq3LockTimeSig !== undefined ? Boolean(state.sq3LockTimeSig) : true;
-
-    // 5. Performance State
-    perfLoops = state.perfLoops ? JSON.parse(JSON.stringify(state.perfLoops)) : {};
-    perfLoopActive = Boolean(state.perfLoopActive);
-    perfLoopDuration = parseFloat(state.perfLoopDuration) || 4.0;
-    perfLoopBtn.classList.toggle('active', perfLoopActive);
-    perfLoopBtn.innerText = perfLoopActive ? '↻ LOOPING ON' : '↻ LOOP OFF';
-
-    // 6. All Synth, Mixer, and FX DOM Controls
-    if (state.controls && typeof state.controls === 'object') {
-      Object.entries(state.controls).forEach(([id, val]) => {
-        const el = document.getElementById(id);
-        if (el && val !== undefined && val !== null) {
-          el.value = val;
-        }
-      });
-    }
-
-    // Preload any SNES SPC700 sample presets selected in the loaded cartridge
-    if (typeof ensureSpcPreset === 'function') {
-      ['tri_wave', 'mel_wave', 'sq1_wave', 'sq2_wave'].forEach(selId => {
-        const el = document.getElementById(selId);
-        if (el) ensureSpcPreset(el.value);
-      });
-    }
-
-    // Sync Live Web Audio DSP Nodes if initialized
-    updateMasterVolume();
-    if (audioCtx) {
-      Object.keys(buses).forEach(t => updateMixerGain(t));
-      updateDelayTime();
-      if (fxNodes.delayFeedback) fxNodes.delayFeedback.gain.value = parseFloat(document.getElementById('fx_delay_feedback').value);
-      if (fxNodes.delayFilter) fxNodes.delayFilter.frequency.value = parseFloat(document.getElementById('fx_delay_damping').value);
-      if (fxNodes.delayWet) fxNodes.delayWet.gain.value = parseFloat(document.getElementById('fx_delay_mix').value);
-      updateReverbImpulse();
-      if (fxNodes.reverbWet) fxNodes.reverbWet.gain.value = parseFloat(document.getElementById('fx_reverb_mix').value);
-      if (fxNodes.chorusDelay) fxNodes.chorusDelay.delayTime.value = parseFloat(document.getElementById('fx_chorus_depth').value);
-      if (fxNodes.chorusWet) fxNodes.chorusWet.gain.value = parseFloat(document.getElementById('fx_chorus_mix').value);
-      if (fxNodes.distShaper) fxNodes.distShaper.curve = makeDistortionCurve(parseFloat(document.getElementById('fx_dist_drive').value));
-      if (fxNodes.distFilter) fxNodes.distFilter.frequency.value = parseFloat(document.getElementById('fx_dist_tone').value);
-      if (fxNodes.distWet) fxNodes.distWet.gain.value = parseFloat(document.getElementById('fx_dist_mix').value);
-    }
-
-    // Sync Performance Target View
-    if (perfTarget.value === 'drums') {
-      mpcSection.style.display = 'block';
-      keyboardSection.style.display = 'none';
-    } else {
-      mpcSection.style.display = 'none';
-      keyboardSection.style.display = 'block';
-    }
-
-    // Re-render all UI panels & grids
-    renderPartPool();
-    renderSongProgression();
-    renderParts();
-    renderArpGrid();
-    renderPolyGrid();
-    renderNoiseGrid();
-    renderKeyboard();
-    updatePartJumpLinks();
-  }
-
-  // --- PNG Chunk & Pixel Steganography Encoder / Decoder ---
-  const PNG_SIGNATURE = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]);
-  const CHUNK_TYPE = 'en6S';
-  const MAGIC_BYTES = [69, 78, 49, 54];
-
-  const crcTable = (() => {
-    const table = new Uint32Array(256);
-    for (let n = 0; n < 256; n++) {
-      let c = n;
-      for (let k = 0; k < 8; k++) {
-        c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
-      }
-      table[n] = c >>> 0;
-    }
-    return table;
-  })();
-
-  function crc32(bytes) {
-    let crc = 0xFFFFFFFF;
-    for (let i = 0; i < bytes.length; i++) {
-      crc = crcTable[(crc ^ bytes[i]) & 0xFF] ^ (crc >>> 8);
-    }
-    return (crc ^ 0xFFFFFFFF) >>> 0;
-  }
-
-  function createPngChunk(typeStr, dataBytes) {
-    const typeBytes = new TextEncoder().encode(typeStr);
-    const len = dataBytes.length;
-    const chunk = new Uint8Array(12 + len);
-    const view = new DataView(chunk.buffer);
-    view.setUint32(0, len, false);
-    chunk.set(typeBytes, 4);
-    chunk.set(dataBytes, 8);
-
-    const crcInput = new Uint8Array(4 + len);
-    crcInput.set(typeBytes, 0);
-    crcInput.set(dataBytes, 4);
-    view.setUint32(8 + len, crc32(crcInput), false);
-    return chunk;
-  }
-
-  function injectChunkIntoPng(pngBytes, typeStr, payloadBytes) {
-    for (let i = 0; i < 8; i++) {
-      if (pngBytes[i] !== PNG_SIGNATURE[i]) throw new Error('Generated buffer is not a valid PNG.');
-    }
-    let offset = 8;
-    let iendOffset = -1;
-    const view = new DataView(pngBytes.buffer, pngBytes.byteOffset, pngBytes.byteLength);
-    while (offset + 12 <= pngBytes.length) {
-      const length = view.getUint32(offset, false);
-      const type = String.fromCharCode(
-        pngBytes[offset + 4],
-        pngBytes[offset + 5],
-        pngBytes[offset + 6],
-        pngBytes[offset + 7]
-      );
-      if (type === 'IEND') {
-        iendOffset = offset;
-        break;
-      }
-      offset += 12 + length;
-    }
-    if (iendOffset === -1) throw new Error('PNG IEND chunk not found.');
-
-    const customChunk = createPngChunk(typeStr, payloadBytes);
-    const result = new Uint8Array(pngBytes.length + customChunk.length);
-    result.set(pngBytes.subarray(0, iendOffset), 0);
-    result.set(customChunk, iendOffset);
-    result.set(pngBytes.subarray(iendOffset), iendOffset + customChunk.length);
-    return result;
-  }
-
-  function extractChunkFromPng(pngBytes, typeStr) {
-    if (pngBytes.length < 24) return null;
-    for (let i = 0; i < 8; i++) {
-      if (pngBytes[i] !== PNG_SIGNATURE[i]) return null;
-    }
-    let offset = 8;
-    const view = new DataView(pngBytes.buffer, pngBytes.byteOffset, pngBytes.byteLength);
-    while (offset + 12 <= pngBytes.length) {
-      const length = view.getUint32(offset, false);
-      if (offset + 12 + length > pngBytes.length) break;
-      const type = String.fromCharCode(
-        pngBytes[offset + 4],
-        pngBytes[offset + 5],
-        pngBytes[offset + 6],
-        pngBytes[offset + 7]
-      );
-      if (type === typeStr) {
-        return pngBytes.subarray(offset + 8, offset + 8 + length);
-      }
-      offset += 12 + length;
-    }
-    return null;
-  }
-
-  // Render a console-authentic Cartridge PNG with embedded data strip + lossless PNG chunk
-  async function buildCartridgePngBlob(stateObj) {
-    const jsonStr = JSON.stringify(stateObj);
-    const payloadBytes = new TextEncoder().encode(jsonStr);
-
-    const stripTotalBytes = 8 + payloadBytes.length;
-    const pixelsNeeded = Math.ceil(stripTotalBytes / 3);
-    const width = 480;
-    const artHeight = 250;
-    const dataRows = Math.max(4, Math.ceil(pixelsNeeded / width));
-    const height = artHeight + dataRows;
-
-    const canvas = document.createElement('canvas');
-    canvas.width = width;
-    canvas.height = height;
-    const ctx = canvas.getContext('2d');
-
-    const firstPartId = stateObj.partOrder[0] || Object.keys(stateObj.songParts)[0];
-    const firstPart = stateObj.songParts[firstPartId];
-    const bpmText = firstPart ? `${firstPart.bpm} BPM` : '86 BPM';
-    const keyText = firstPart ? `${keyNames[firstPart.keyRoot] || 'E'} ${(firstPart.keyMode || 'minor').toUpperCase()}` : 'E MINOR';
-    const partsCount = Object.keys(stateObj.songParts).length;
-    const titleDisplay = (stateObj.songTitle || 'UNTITLED_SONG').toUpperCase();
-
-    // --- Draw SNES 16-Bit Cartridge Artwork ---
-    ctx.fillStyle = '#1A1824';
-    ctx.fillRect(0, 0, width, artHeight);
-
-    // Classic SNES grey shell with dual side lock slots
-    const cartX = 32, cartY = 12, cartW = width - 64, cartH = 228;
-    ctx.fillStyle = '#8E8AA8';
-    ctx.fillRect(cartX, cartY, cartW, cartH);
-    ctx.fillStyle = '#6E6A86';
-    ctx.fillRect(cartX + 6, cartY + 6, cartW - 12, cartH - 12);
-
-    // SNES horizontal grip ridges & center notch
-    ctx.fillStyle = '#4B485E';
-    for (let y = 24; y <= 66; y += 8) {
-      ctx.fillRect(cartX + 16, y, 64, 4);
-      ctx.fillRect(cartX + cartW - 80, y, 64, 4);
-    }
-
-    // Center SNES concave label recess
-    const lblX = cartX + 94, lblY = cartY + 14, lblW = cartW - 188, lblH = 194;
-    ctx.fillStyle = '#191726';
-    ctx.fillRect(lblX, lblY, lblW, lblH);
-    ctx.strokeStyle = '#7B5CD6';
-    ctx.lineWidth = 3;
-    ctx.strokeRect(lblX + 1.5, lblY + 1.5, lblW - 3, lblH - 3);
-
-    // SNES Purple & Super Famicom 4-color accent bar
-    ctx.fillStyle = '#7B5CD6';
-    ctx.fillRect(lblX + 6, lblY + 6, lblW - 12, 32);
-    const sfcColors = ['#E11D48', '#EAB308', '#22C55E', '#3B78FF'];
-    sfcColors.forEach((col, idx) => {
-      ctx.fillStyle = col;
-      ctx.fillRect(lblX + 6 + idx * ((lblW - 12) / 4), lblY + 38, (lblW - 12) / 4, 4);
-    });
-
-    ctx.fillStyle = '#FFFFFF';
-    ctx.font = 'bold 14px "Press Start 2P", monospace';
-    ctx.textBaseline = 'middle';
-    ctx.fillText('EN-16', lblX + 12, lblY + 23);
-
-    ctx.fillStyle = '#FACC15';
-    ctx.font = '7px "Press Start 2P", monospace';
-    ctx.fillText('SPC700 CART', lblX + 122, lblY + 23);
-
-    // Song Title
-    ctx.fillStyle = '#9D8DF1';
-    ctx.font = '9px "Press Start 2P", monospace';
-    const maxChars = 21;
-    const line1 = titleDisplay.slice(0, maxChars);
-    const line2 = titleDisplay.slice(maxChars, maxChars * 2);
-    ctx.fillText(line1, lblX + 12, lblY + 64);
-    if (line2) {
-      ctx.fillText(line2, lblX + 12, lblY + 80);
-    }
-
-    // Metadata
-    ctx.fillStyle = '#F2F1F8';
-    ctx.font = '8px "Press Start 2P", monospace';
-    ctx.fillText(`PARTS: ${partsCount} | ${bpmText}`, lblX + 12, lblY + 110);
-    ctx.fillStyle = '#22C55E';
-    ctx.fillText(`KEY: ${keyText}`, lblX + 12, lblY + 128);
-
-    // SPC700 8-channel visualizer bars
-    const snesBars = ['#7B5CD6', '#9D8DF1', '#3B78FF', '#22C55E', '#EAB308', '#E11D48'];
-    for (let i = 0; i < 16; i++) {
-      const bx = lblX + 12 + i * 12.5;
-      const activeH = 8 + ((i * 5 + partsCount * 7) % 28);
-      ctx.fillStyle = snesBars[i % snesBars.length];
-      ctx.fillRect(bx, lblY + lblH - 12 - activeH, 9, activeH);
-    }
-
-    // Bottom edge connector
-    ctx.fillStyle = '#1A1824';
-    ctx.fillRect(140, artHeight - 10, width - 280, 10);
-
-    // --- Write Raw RGB Data Strip at Bottom of Image ---
-    const stripBuffer = new Uint8Array(pixelsNeeded * 3);
-    stripBuffer[0] = MAGIC_BYTES[0];
-    stripBuffer[1] = MAGIC_BYTES[1];
-    stripBuffer[2] = MAGIC_BYTES[2];
-    stripBuffer[3] = MAGIC_BYTES[3];
-    const stripView = new DataView(stripBuffer.buffer);
-    stripView.setUint32(4, payloadBytes.length, false);
-    stripBuffer.set(payloadBytes, 8);
-
-    const imgData = ctx.createImageData(width, dataRows);
-    const px = imgData.data;
-    for (let p = 0; p < width * dataRows; p++) {
-      const sIdx = p * 3;
-      const dIdx = p * 4;
-      px[dIdx]     = sIdx < stripBuffer.length ? stripBuffer[sIdx] : 0;
-      px[dIdx + 1] = sIdx + 1 < stripBuffer.length ? stripBuffer[sIdx + 1] : 0;
-      px[dIdx + 2] = sIdx + 2 < stripBuffer.length ? stripBuffer[sIdx + 2] : 0;
-      px[dIdx + 3] = 255;
-    }
-    ctx.putImageData(imgData, 0, artHeight);
-
-    const rawBlob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-    const rawArrayBuf = await rawBlob.arrayBuffer();
-    const rawPngBytes = new Uint8Array(rawArrayBuf);
-    const finalPngBytes = injectChunkIntoPng(rawPngBytes, CHUNK_TYPE, payloadBytes);
-
-    return new Blob([finalPngBytes], { type: 'image/png' });
-  }
-
-  async function decodeCartridgePngFile(file) {
-    const arrayBuf = await file.arrayBuffer();
-    const pngBytes = new Uint8Array(arrayBuf);
-
-    // Method 1: Fast lossless extraction from custom PNG ancillary chunk
-    const chunkBytes = extractChunkFromPng(pngBytes, CHUNK_TYPE);
-    if (chunkBytes) {
-      const jsonStr = new TextDecoder().decode(chunkBytes);
-      return JSON.parse(jsonStr);
-    }
-
-    // Method 2: Fallback extraction from the RGB pixel data strip at the bottom of the image
-    const bitmapUrl = URL.createObjectURL(file);
-    try {
-      const img = await new Promise((resolve, reject) => {
-        const image = new Image();
-        image.onload = () => resolve(image);
-        image.onerror = () => reject(new Error('Unable to read PNG image.'));
-        image.src = bitmapUrl;
-      });
-
-      const canvas = document.createElement('canvas');
-      canvas.width = img.width;
-      canvas.height = img.height;
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0);
-
-      const artHeight = 250;
-      if (img.height <= artHeight) {
-        throw new Error('This PNG does not contain EN-16 cartridge data.');
-      }
-
-      const dataRows = img.height - artHeight;
-      const imgData = ctx.getImageData(0, artHeight, img.width, dataRows).data;
-      const totalPixels = img.width * dataRows;
-      const rawBytes = new Uint8Array(totalPixels * 3);
-      for (let p = 0; p < totalPixels; p++) {
-        rawBytes[p * 3]     = imgData[p * 4];
-        rawBytes[p * 3 + 1] = imgData[p * 4 + 1];
-        rawBytes[p * 3 + 2] = imgData[p * 4 + 2];
-      }
-
-      if (rawBytes[0] !== MAGIC_BYTES[0] || rawBytes[1] !== MAGIC_BYTES[1] || rawBytes[2] !== MAGIC_BYTES[2] || rawBytes[3] !== MAGIC_BYTES[3]) {
-        throw new Error('This PNG does not contain valid EN-16 song data.');
-      }
-
-      const view = new DataView(rawBytes.buffer);
-      const payloadLen = view.getUint32(4, false);
-      if (payloadLen <= 0 || 8 + payloadLen > rawBytes.length) {
-        throw new Error('Corrupted EN-16 data strip in PNG.');
-      }
-
-      const payloadSlice = rawBytes.subarray(8, 8 + payloadLen);
-      const jsonStr = new TextDecoder().decode(payloadSlice);
-      return JSON.parse(jsonStr);
-    } finally {
-      URL.revokeObjectURL(bitmapUrl);
-    }
-  }
-
-  exportPngBtn.onclick = async () => {
-    try {
-      const stateObj = serializeAppState();
-      const safeFilename = sanitizeFilename(stateObj.songTitle) + '.png';
-      const pngBlob = await buildCartridgePngBlob(stateObj);
-
-      const url = URL.createObjectURL(pngBlob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = safeFilename;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      setTimeout(() => URL.revokeObjectURL(url), 1500);
-
-      showCartStatus(`SAVED CARTRIDGE: ${safeFilename}`);
-    } catch (err) {
-      console.error(err);
-      showCartStatus('EXPORT FAILED: ' + err.message, true);
-    }
-  };
-
-  importPngBtn.onclick = () => {
-    importPngFile.value = '';
-    importPngFile.click();
-  };
-
-  importPngFile.onchange = async (e) => {
-    const file = e.target.files && e.target.files[0];
-    if (!file) return;
-    try {
-      const stateObj = await decodeCartridgePngFile(file);
-      applyAppState(stateObj);
-      showCartStatus(`LOADED SONG: "${stateObj.songTitle || 'UNTITLED_SONG'}"`);
-    } catch (err) {
-      console.error(err);
-      showCartStatus('LOAD FAILED: ' + err.message, true);
-    }
-  };
+    };
 </script>
 </body>
 </html>
